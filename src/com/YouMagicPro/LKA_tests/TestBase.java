@@ -31,7 +31,7 @@ import org.testng.annotations.BeforeTest;
 		
 	    protected void startWebDriver() throws SecurityException, IOException {
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\workspace\\chromedriver.exe");
 	    	driver = new ChromeDriver();
 	    	wait = new WebDriverWait(driver, 120);
 	    }
@@ -100,8 +100,9 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void waitAdminPageToLoad()
 	    {
-	    	driver.get("http://youmagic.pro/user/login/");
-	    	
+	    	driver.get("http://youmagic.pro/");//открытие портала
+	    	driver.findElement(By.xpath("//span")).click();//нажатие на кнопку "¬ход"
+	    	driver.switchTo().frame("iframe_autor");
 	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина парол€
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
 	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"

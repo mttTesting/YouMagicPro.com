@@ -2,29 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78102" started-at="2012-11-29T10:01:58Z" finished-at="2012-11-29T10:03:16Z">
+  <suite name="Default suite" duration-ms="41080" started-at="2012-11-30T11:29:55Z" finished-at="2012-11-30T11:30:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78102" started-at="2012-11-29T10:01:58Z" finished-at="2012-11-29T10:03:16Z">
-      <class name="com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest@2810b7f7]" name="setUp" is-config="true" duration-ms="6166" started-at="2012-11-29T14:01:58Z" finished-at="2012-11-29T14:02:04Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="41080" started-at="2012-11-30T11:29:55Z" finished-at="2012-11-30T11:30:36Z">
+      <class name="com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers@2c351b05]" name="startWebDriver" is-config="true" duration-ms="1179" started-at="2012-11-30T15:29:55Z" finished-at="2012-11-30T15:29:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addAndDeleteMenusTest()[pri:0, instance:com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest@2810b7f7]" name="addAndDeleteMenusTest" duration-ms="71530" started-at="2012-11-29T14:02:04Z" finished-at="2012-11-29T14:03:15Z">
+        </test-method> <!-- startWebDriver -->
+        <test-method status="PASS" signature="buying804NumberCategoriesOfNumbers_C25622()[pri:0, instance:com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers@2c351b05]" name="buying804NumberCategoriesOfNumbers_C25622" duration-ms="39895" started-at="2012-11-30T15:29:56Z" finished-at="2012-11-30T15:30:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAndDeleteMenusTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest@2810b7f7]" name="tearDown" is-config="true" duration-ms="406" started-at="2012-11-29T14:03:15Z" finished-at="2012-11-29T14:03:16Z">
+        </test-method> <!-- buying804NumberCategoriesOfNumbers_C25622 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers@2c351b05]" name="closeSession" is-config="true" duration-ms="3" started-at="2012-11-30T15:30:36Z" finished-at="2012-11-30T15:30:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest -->
+        </test-method> <!-- closeSession -->
+      </class> <!-- com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
