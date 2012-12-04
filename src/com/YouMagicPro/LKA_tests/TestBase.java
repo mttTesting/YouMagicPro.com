@@ -10,7 +10,9 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -33,6 +35,7 @@ import org.testng.annotations.BeforeTest;
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\workspace\\chromedriver.exe");
 	    	driver = new ChromeDriver();
+			//WebDriver driver = new FirefoxDriver();
 	    	wait = new WebDriverWait(driver, 120);
 	    }
 	 
@@ -101,22 +104,26 @@ import org.testng.annotations.BeforeTest;
 	    public static void waitAdminPageToLoad()
 	    {
 	    	driver.get("http://youmagic.pro/");//открытие портала
-	    	driver.findElement(By.xpath("//span")).click();//нажатие на кнопку "¬ход"
+
+	    	driver.findElement(By.xpath("//a[@id='entrance']/span")).click();//нажатие на кнопку "¬ход"
+
 	    	driver.switchTo().frame("iframe_autor");
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина парол€
+
+	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
 	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
 	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
 	    	driver.get("http://youmagic.pro/");//открытие портала
 	    	driver.findElement(By.xpath("//span")).click();//нажатие на кнопку "¬ход"
 	    	driver.switchTo().frame("iframe_autor");
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина парол€
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
 	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
@@ -128,7 +135,7 @@ import org.testng.annotations.BeforeTest;
 	    	driver.get("http://youmagic.pro/");//открытие порталa
 	    	driver.findElement(By.xpath("//span")).click();//нажатие на кнопку "¬ход"
 	    	driver.switchTo().frame("iframe_autor");
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина парол€
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
 	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
 	    	
