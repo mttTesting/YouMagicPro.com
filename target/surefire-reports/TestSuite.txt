@@ -1,30 +1,180 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 93, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 2,380.19 sec <<< FAILURE!
-addAndDeleteMenusTest(com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest)  Time elapsed: 28.985 sec  <<< FAILURE!
-com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[3]/div[2]/a/span not found
+Tests run: 97, Failures: 61, Errors: 0, Skipped: 0, Time elapsed: 1,831.98 sec <<< FAILURE!
+addAndDeleteMenusTest(com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest)  Time elapsed: 55.536 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at org.testng.AssertJUnit.assertFalse(AssertJUnit.java:41)
+	at org.testng.AssertJUnit.assertFalse(AssertJUnit.java:49)
+	at com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest.addAndDeleteMenusTest(AddAndDeleteMenusTest.java:34)
+
+voiceFillNAmeTextFieldTest_C15293(com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest)  Time elapsed: 25.79 sec  <<< FAILURE!
+java.lang.AssertionError: expected [М1] but found [Меню]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
+	at com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest.voiceFillNAmeTextFieldTest_C15293(VoiceFillNAmeTextFieldTest.java:32)
+
+voiceMailChooseSoundTest_C15294(com.YouMagicPro.LKA_tests.VoiceMailChooseSoundTest)  Time elapsed: 23.3 sec  <<< FAILURE!
+java.lang.AssertionError: expected [М1] but found [Меню]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
+	at com.YouMagicPro.LKA_tests.VoiceMailChooseSoundTest.voiceMailChooseSoundTest_C15294(VoiceMailChooseSoundTest.java:40)
+
+voiceMailEmptyNameTextFieldTest_C19851(com.YouMagicPro.LKA_tests.VoiceMailEmptyNameTextFieldTest)  Time elapsed: 3.054 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 7c29993d2c57d94efc589e5f1b98b8d8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.VoiceMailEmptyNameTextFieldTest.voiceMailEmptyNameTextFieldTest_C19851(VoiceMailEmptyNameTextFieldTest.java:10)
+
+buying804NumberCategoriesOfNumbers_C25622(com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers)  Time elapsed: 2.894 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: de42c09f0be18393749970cd3c19d465
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.Buying804NumberCategoriesOfNumbers.buying804NumberCategoriesOfNumbers_C25622(Buying804NumberCategoriesOfNumbers.java:11)
+
+voiceMailTest(com.YouMagicPro.LKA_tests.VoiceMailPageTest)  Time elapsed: 3.264 sec  <<< FAILURE!
+com.thoughtworks.selenium.SeleniumException: ERROR: Element css=a.bPopup__eClose.instructions-close not found
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.YouMagicPro.LKA_tests.AddAndDeleteMenusTest.addAndDeleteMenusTest(AddAndDeleteMenusTest.java:26)
+	at com.YouMagicPro.LKA_tests.VoiceMailPageTest.voiceMailTest(VoiceMailPageTest.java:19)
 
-clickOnInternalNumbersTest(com.YouMagicPro.LKA_tests.ClickOnInternalNumbersTest)  Time elapsed: 18.646 sec  <<< FAILURE!
-com.thoughtworks.selenium.SeleniumException: ERROR: Couldn't access document.body.  Is this HTML page fully loaded?
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:275)
-	at com.thoughtworks.selenium.HttpCommandProcessor.getBoolean(HttpCommandProcessor.java:348)
-	at com.thoughtworks.selenium.DefaultSelenium.isTextPresent(DefaultSelenium.java:535)
-	at com.YouMagicPro.LKA_tests.ClickOnInternalNumbersTest.clickOnInternalNumbersTest(ClickOnInternalNumbersTest.java:26)
-
-contractBankAccountOneInTextFieldTest_C14993(com.YouMagicPro.LKA_tests.ContractBankAccountOneInTextFieldTest)  Time elapsed: 15.301 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Element is not clickable at point (555, 381). Other element would receive the click: <img id="1" class="slideimage" src="/sites/all/modules/contrib/umagicpro_instructions/images/home.png" data-title="Благодарим вас за выбор YouMagic.Pro!"> (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+buying804NumberCostOfNumberTest_C25623(com.YouMagicPro.LKA_tests.Buying804NumberCostOfNumberTest)  Time elapsed: 2.792 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: 42ceaa2cdec8593375f22775fee20504
+Session ID: 6fb9be30f7b001191c5cc32d0e375260
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.Buying804NumberCostOfNumberTest.buying804NumberCostOfNumberTest_C25623(Buying804NumberCostOfNumberTest.java:11)
+
+voiceMenuAddTest_C15292(com.YouMagicPro.LKA_tests.VoiceMenuAddTest)  Time elapsed: 2.909 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9e51695b35ebec2ebf6aec01bd8126fc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.VoiceMenuAddTest.voiceMenuAddTest_C15292(VoiceMenuAddTest.java:10)
+
+buyingAdditionalInternalNumberCheckCost_C15113(com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberCheckCost)  Time elapsed: 2.917 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 437f229a38241a7a46665b4570ede0af
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberCheckCost.buyingAdditionalInternalNumberCheckCost_C15113(BuyingAdditionalInternalNumberCheckCost.java:11)
+
+voiceMailChooseSoundTest_C15294(com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest)  Time elapsed: 2.892 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: a77c5e428b201c1d66d824497d59735f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest.voiceMailChooseSoundTest_C15294(VoiceMenuChooseSoundTest.java:10)
+
+buyingAdditionalInternalNumberTextFieldTest_C15112(com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest)  Time elapsed: 2.954 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: ad63e4c3dd973a5e3808750aaf8becbf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest.buyingAdditionalInternalNumberTextFieldTest_C15112(BuyingAdditionalInternalNumberTextFieldTest.java:11)
+
+buyingAdditionalNumberChooseCityFromList_C15103(com.YouMagicPro.LKA_tests.BuyingAdditionalNumberChooseCityFromList)  Time elapsed: 17.44 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Element is not clickable at point (-104, 176.5) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 158 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 3ea1181522dc24aa8ab5e4b0ddaf9c9b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -34,26 +184,520 @@ Session ID: 42ceaa2cdec8593375f22775fee20504
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:138)
-	at com.YouMagicPro.LKA_tests.ContractBankAccountOneInTextFieldTest.contractBankAccountOneInTextFieldTest_C14993(ContractBankAccountOneInTextFieldTest.java:11)
+	at com.YouMagicPro.LKA_tests.BuyingAdditionalNumberChooseCityFromList.buyingAdditionalNumberChooseCityFromList_C15103(BuyingAdditionalNumberChooseCityFromList.java:16)
 
-expenseStructureTest(com.YouMagicPro.LKA_tests.DiscSpaceTest)  Time elapsed: 125.914 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Timed out after 120 seconds waiting for element to be clickable: By.selector: a.bPopup__eClose.instructions-close
+voiceFillNAmeTextFieldTest_C15293(com.YouMagicPro.LKA_tests.VoiceMenuFillNAmeTextFieldTest)  Time elapsed: 2.861 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:255)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
-	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.DiscSpaceTest.expenseStructureTest(DiscSpaceTest.java:11)
-Caused by: org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 40a6fe80d860524419d38bc6994bacc1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.VoiceMenuFillNAmeTextFieldTest.voiceFillNAmeTextFieldTest_C15293(VoiceMenuFillNAmeTextFieldTest.java:10)
+
+yourNumbersTest(com.YouMagicPro.LKA_tests.YourNumbersTest)  Time elapsed: 19.82 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at com.YouMagicPro.LKA_tests.YourNumbersTest.yourNumbersTest(YourNumbersTest.java:18)
+
+BuyingAdditionalNumberChooseNumbersFromList_C15106(com.YouMagicPro.LKA_tests.BuyingAdditionalNumberChooseNumbersFromList)  Time elapsed: 2.838 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 134bb65a149294ebe705807439278184
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.BuyingAdditionalNumberChooseNumbersFromList.BuyingAdditionalNumberChooseNumbersFromList_C15106(BuyingAdditionalNumberChooseNumbersFromList.java:11)
+
+contractBankAccountLettersAndNumbersTest_C14496(com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest)  Time elapsed: 14.128 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 15 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9fc20eb520415d13f45cef34ec328619
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest.contractBankAccountLettersAndNumbersTest_C14496(ContractBankAccountLettersAndNumbersTest.java:11)
+
+contractBankAccountLettersInTextFieldTest_C14995(com.YouMagicPro.LKA_tests.ContractBankAccountLettersInTextFieldTest)  Time elapsed: 12.844 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: d8df0a1745c2d940045ab9973a659241
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractBankAccountLettersInTextFieldTest.contractBankAccountLettersInTextFieldTest_C14995(ContractBankAccountLettersInTextFieldTest.java:11)
+
+contractBankAccountTenInTextFieldTest_C14994(com.YouMagicPro.LKA_tests.ContractBankAccountTenInTextFieldTest)  Time elapsed: 12.872 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 2cb8b60b44c7c0fff71cff1743dec0ea
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractBankAccountTenInTextFieldTest.contractBankAccountTenInTextFieldTest_C14994(ContractBankAccountTenInTextFieldTest.java:11)
+
+contractBikTestLettersInTextField_C15023(com.YouMagicPro.LKA_tests.ContractBikLettersInTextFieldTest)  Time elapsed: 12.904 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 60286d0314cd79fe88fa8cdcd262ab1b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractBikLettersInTextFieldTest.contractBikTestLettersInTextField_C15023(ContractBikLettersInTextFieldTest.java:11)
+
+contractBikSymbolsInTextFieldTest_C15026(com.YouMagicPro.LKA_tests.ContractBikSymbolsInTextFieldTest)  Time elapsed: 12.804 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 32a5e7f7b3d003b7abc609ccb739b52b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractBikSymbolsInTextFieldTest.contractBikSymbolsInTextFieldTest_C15026(ContractBikSymbolsInTextFieldTest.java:11)
+
+contractCheckDocumentTest_C14986(com.YouMagicPro.LKA_tests.ContractCheckDocumentTest)  Time elapsed: 23.191 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Element is not clickable at point (303, 419). Other element would receive the click: <div id="instructionBackdrop" style="z-index: 1110; position: absolute; left: 0px; margin: 0px; background-color: rgb(255, 255, 255); opacity: 0.55; top: 0px; height: 2428px; width: 960px; background-position: initial initial; background-repeat: initial initial;"></div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 133 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: a1811604c11af641a2c75438ea332ddc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.YouMagicPro.LKA_tests.ContractCheckDocumentTest.contractCheckDocumentTest_C14986(ContractCheckDocumentTest.java:13)
+
+contractCorAccount19NumbersTest_C15005(com.YouMagicPro.LKA_tests.ContractCorAccount19NumbersTest)  Time elapsed: 14.096 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 00a48d326a720675cb8212ec46bdcaaf
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractCorAccount19NumbersTest.contractCorAccount19NumbersTest_C15005(ContractCorAccount19NumbersTest.java:11)
+
+contractCorAccountTenInTextFieldTest_C15000(com.YouMagicPro.LKA_tests.ContractCorAccountLettersAndNumbersTextFieldTest)  Time elapsed: 12.821 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 0f3db4c7e5236000b3ddd6101d940ffd
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractCorAccountLettersAndNumbersTextFieldTest.contractCorAccountTenInTextFieldTest_C15000(ContractCorAccountLettersAndNumbersTextFieldTest.java:8)
+
+contractCorAccountLettersInTextFieldTest_C15001(com.YouMagicPro.LKA_tests.ContractCorAccountLettersInTextFieldTest)  Time elapsed: 12.975 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: e5bc8e80d41677c7b6e058f3c5a8203a
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractCorAccountLettersInTextFieldTest.contractCorAccountLettersInTextFieldTest_C15001(ContractCorAccountLettersInTextFieldTest.java:8)
+
+contractCorAccountSymbolsInTextFieldTest_C15003(com.YouMagicPro.LKA_tests.ContractCorAccountSymbolsInTextFieldTest)  Time elapsed: 12.865 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 64f91d8a2afbfc5149ab062f72ba5125
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractCorAccountSymbolsInTextFieldTest.contractCorAccountSymbolsInTextFieldTest_C15003(ContractCorAccountSymbolsInTextFieldTest.java:8)
+
+contractEndOfPageDataTest_C15062(com.YouMagicPro.LKA_tests.ContractEndOfPageDataTest)  Time elapsed: 26.689 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Element is not clickable at point (58, 663). Other element would receive the click: <img id="1" class="slideimage" src="/sites/all/modules/contrib/umagicpro_instructions/images/home.png" data-title="Благодарим вас за выбор YouMagic.Pro!"> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 04fbbc55d8303b7fe97e6401b60cb647
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.YouMagicPro.LKA_tests.ContractEndOfPageDataTest.contractEndOfPageDataTest_C15062(ContractEndOfPageDataTest.java:14)
+
+fillInContractDataTest_C14998(com.YouMagicPro.LKA_tests.ContractFillInDataTest)  Time elapsed: 14.102 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9a354438c4ca35d3b260f2db1104e881
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractFillInDataTest.fillInContractDataTest_C14998(ContractFillInDataTest.java:13)
+
+contractInnChooseForm_C15047(com.YouMagicPro.LKA_tests.ContractInnChooseFormTest)  Time elapsed: 12.861 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 78328d5336255f98e225fe5d9cb0961a
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractInnChooseFormTest.contractInnChooseForm_C15047(ContractInnChooseFormTest.java:11)
+
+contractInnLettersInTextFieldTest_C15030(com.YouMagicPro.LKA_tests.ContractInnLettersInTextFieldTest)  Time elapsed: 12.892 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 517748264d66a5ec6d130be600a423d8
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractInnLettersInTextFieldTest.contractInnLettersInTextFieldTest_C15030(ContractInnLettersInTextFieldTest.java:8)
+
+contractInnOneInTextFieldTest_C15028(com.YouMagicPro.LKA_tests.ContractInnOneInTextFieldTest)  Time elapsed: 14.142 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 407e04167b32c3d5fede9f0539c0aaad
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractInnOneInTextFieldTest.contractInnOneInTextFieldTest_C15028(ContractInnOneInTextFieldTest.java:8)
+
+contractInnLettersInTextFieldTest_C15030(com.YouMagicPro.LKA_tests.ContractInnSymbolsInTextFieldTest)  Time elapsed: 15.827 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 4324df5af01b03d162a8de70e5212728
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractInnSymbolsInTextFieldTest.contractInnLettersInTextFieldTest_C15030(ContractInnSymbolsInTextFieldTest.java:8)
+
+contractKppTest_C15049(com.YouMagicPro.LKA_tests.ContractKpp6NumbersInTextFieldTest)  Time elapsed: 14.201 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 3b424cfdbdb2e8ef974f5ffdacfbfc85
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractKpp6NumbersInTextFieldTest.contractKppTest_C15049(ContractKpp6NumbersInTextFieldTest.java:11)
+
+contractKppTest_C15054(com.YouMagicPro.LKA_tests.ContractKppLettersAndNumbersTest)  Time elapsed: 14.256 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 259c7a8a49c57ccc384e8c5974ca8817
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractKppLettersAndNumbersTest.contractKppTest_C15054(ContractKppLettersAndNumbersTest.java:11)
+
+contractKppTest_C15050(com.YouMagicPro.LKA_tests.ContractKppLettersTest)  Time elapsed: 12.911 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: a28f79cec4019b82b92894f86e2db0d0
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractKppLettersTest.contractKppTest_C15050(ContractKppLettersTest.java:11)
+
+contractKppTest_C15051(com.YouMagicPro.LKA_tests.ContractKppSymbolsTest)  Time elapsed: 14.179 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 2de1572ad3faf5423871f5c4e07523ab
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractKppSymbolsTest.contractKppTest_C15051(ContractKppSymbolsTest.java:11)
+
+contractOgrn6NumbersInTextFieldTest_C15055(com.YouMagicPro.LKA_tests.ContractOgrn6NumbersInTextFieldTest)  Time elapsed: 12.867 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 7276cc8ec2b86cb7699143908556fbcf
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractOgrn6NumbersInTextFieldTest.contractOgrn6NumbersInTextFieldTest_C15055(ContractOgrn6NumbersInTextFieldTest.java:9)
+
+contractOgrnLettersInTextFieldTest_C15056(com.YouMagicPro.LKA_tests.ContractOgrnLettersInTextFieldTest)  Time elapsed: 12.923 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: dd803518dbaa42a5c33b524d67cb16e4
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractOgrnLettersInTextFieldTest.contractOgrnLettersInTextFieldTest_C15056(ContractOgrnLettersInTextFieldTest.java:9)
+
+contractFillBankAccountTest(com.YouMagicPro.LKA_tests.ContractOgrnSymbolsTest)  Time elapsed: 14.23 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: logged_in = getCookie("umagicpro_logged_in");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({ src: atr_adm}).css({display: "none" });$(".iframe_rega").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: "visible", display: "block"}); }); } else {loginAction(); };
+ getCookie is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 94d156158ed91e41fe5df5b8f579fb70
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:238)
+	at com.YouMagicPro.LKA_tests.ContractOgrnSymbolsTest.contractFillBankAccountTest(ContractOgrnSymbolsTest.java:11)
+
+discSpaceTest(com.YouMagicPro.LKA_tests.DiscSpaceTest)  Time elapsed: 2.874 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: cd72a0263f793076161d01f76867f9d8
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.DiscSpaceTest.discSpaceTest(DiscSpaceTest.java:11)
+
+employeesEditProfileTest_C15253(com.YouMagicPro.LKA_tests.EmployeesAddEmployeeTest)  Time elapsed: 30.057 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.09 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: 2f92d37ec3a68dfc394009f530701f6f
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+Session ID: a9e125d8999e2bda21bb7d95fb342d19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.EmployeesAddEmployeeTest.employeesEditProfileTest_C15253(EmployeesAddEmployeeTest.java:24)
+
+employeesCheckInfoTest_C15252(com.YouMagicPro.LKA_tests.EmployeesCheckInfoTest)  Time elapsed: 26.583 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 76217c6dc117d4dd39a26f4b16d0cd29
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
@@ -63,22 +707,142 @@ Session ID: 2f92d37ec3a68dfc394009f530701f6f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:378)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:405)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:427)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:123)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:310)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 35 more
+	at com.YouMagicPro.LKA_tests.EmployeesCheckInfoTest.employeesCheckInfoTest_C15252(EmployeesCheckInfoTest.java:24)
 
-OrderByPickUpChangePhoneTest_C25666(com.YouMagicPro.LKA_tests.OrderByPickUpChangePhoneTest)  Time elapsed: 5.337 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Element is not clickable at point (0, 0) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 33 milliseconds
+employeesEditProfileTest_C15253(com.YouMagicPro.LKA_tests.EmployeesEditProfile2SymbolsInTextFieldTest)  Time elapsed: 2.964 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: 72f0d768e30d94f0c2a1539f3930085a
+Session ID: f89633882f3bf5a99f93a8c1b147e012
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.EmployeesEditProfile2SymbolsInTextFieldTest.employeesEditProfileTest_C15253(EmployeesEditProfile2SymbolsInTextFieldTest.java:11)
+
+expenseStructureAdditionalNumbersFeeTest_C15096(com.YouMagicPro.LKA_tests.ExpenseStructureAdditionalNumbersFeeTest)  Time elapsed: 2.807 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 97cf7669f5fb8fc59fd6752bdb543793
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.ExpenseStructureAdditionalNumbersFeeTest.expenseStructureAdditionalNumbersFeeTest_C15096(ExpenseStructureAdditionalNumbersFeeTest.java:11)
+
+expenseStructureInternalNumbersFeeTest_C15101(com.YouMagicPro.LKA_tests.ExpenseStructureInternalNumbersFeeTest)  Time elapsed: 2.922 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 6b7e6b301420fc138416b5b3bef9abfa
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.ExpenseStructureInternalNumbersFeeTest.expenseStructureInternalNumbersFeeTest_C15101(ExpenseStructureInternalNumbersFeeTest.java:11)
+
+expenseStructureRentalFeeTest_C15096(com.YouMagicPro.LKA_tests.ExpenseStructureRentalFeeTest)  Time elapsed: 2.846 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 544370b25a4d56d7310e6782b87113bd
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:150)
+	at com.YouMagicPro.LKA_tests.ExpenseStructureRentalFeeTest.expenseStructureRentalFeeTest_C15096(ExpenseStructureRentalFeeTest.java:11)
+
+orderByEmailCancelButtonTest_C15141(com.YouMagicPro.LKA_tests.NotificationsCheckFieldsTest)  Time elapsed: 2.73 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: d228a4c8bd4c612abfda8cbdfa70a2ac
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.NotificationsCheckFieldsTest.orderByEmailCancelButtonTest_C15141(NotificationsCheckFieldsTest.java:10)
+
+orderByEmailCancelButtonTest_C15141(com.YouMagicPro.LKA_tests.OrderByEmailCancelButtonTest)  Time elapsed: 2.89 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 00774bf817043c5dfecb3ddaba1643f5
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderByEmailCancelButtonTest.orderByEmailCancelButtonTest_C15141(OrderByEmailCancelButtonTest.java:11)
+
+orderByEmailChangeEmailTest_C25653(com.YouMagicPro.LKA_tests.OrderByEmailChangeEmailTest)  Time elapsed: 2.909 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: f686acdeb3ef9a77505cb041dd4a1860
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderByEmailChangeEmailTest.orderByEmailChangeEmailTest_C25653(OrderByEmailChangeEmailTest.java:11)
+
+orderByEmailChangeNameTest_C25671(com.YouMagicPro.LKA_tests.OrderByEmailChangeNameTest)  Time elapsed: 29.982 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: cd80c4999754f52a20d12c6a190f7daa
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -86,8 +850,231 @@ Session ID: 72f0d768e30d94f0c2a1539f3930085a
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:120)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:217)
+	at com.YouMagicPro.LKA_tests.OrderByEmailChangeNameTest.orderByEmailChangeNameTest_C25671(OrderByEmailChangeNameTest.java:11)
+
+orderByEmailOrderWithoutDocTypeCheckedTest_C25656(com.YouMagicPro.LKA_tests.OrderByEmailOrderWithoutDocTypeCheckedTest)  Time elapsed: 20.165 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: f95aa63d9370973989583dd380fc22b9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:217)
+	at com.YouMagicPro.LKA_tests.OrderByEmailOrderWithoutDocTypeCheckedTest.orderByEmailOrderWithoutDocTypeCheckedTest_C25656(OrderByEmailOrderWithoutDocTypeCheckedTest.java:11)
+
+orderByPickUpCancelButtonTest_C25664(com.YouMagicPro.LKA_tests.OrderByPickUpCancelButtonTest)  Time elapsed: 3.042 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 7e0ce508ee4a9a47659c2df624727bf4
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderByPickUpCancelButtonTest.orderByPickUpCancelButtonTest_C25664(OrderByPickUpCancelButtonTest.java:11)
+
+orderByPickUpChangeNameTest_C25668(com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest)  Time elapsed: 20.896 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 86076a7c1ec0754163c6aa94025d5918
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:217)
+	at com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest.orderByPickUpChangeNameTest_C25668(OrderByPickUpChangeNameTest.java:11)
+
+OrderByPickUpChangePhoneTest_C25666(com.YouMagicPro.LKA_tests.OrderByPickUpChangePhoneTest)  Time elapsed: 2.912 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: f0f64701a6706f5d58dd1bcc69e4a9c0
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
 	at com.YouMagicPro.LKA_tests.OrderByPickUpChangePhoneTest.OrderByPickUpChangePhoneTest_C25666(OrderByPickUpChangePhoneTest.java:11)
+
+orderByPickUpOrderWithoutDocTypeCheckedTest_C25663(com.YouMagicPro.LKA_tests.OrderByPickUpOrderWithoutDocTypeCheckedTest)  Time elapsed: 20.61 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 366bb9e44434883ba49409bf0994f255
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:217)
+	at com.YouMagicPro.LKA_tests.OrderByPickUpOrderWithoutDocTypeCheckedTest.orderByPickUpOrderWithoutDocTypeCheckedTest_C25663(OrderByPickUpOrderWithoutDocTypeCheckedTest.java:11)
+
+orderDeliveryOfContractCancelButtonTest(com.YouMagicPro.LKA_tests.OrderDeliveryOfContractCancelButtonTest)  Time elapsed: 2.962 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 2b4e57f9c7f0f016c2e199bba0229c1b
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderDeliveryOfContractCancelButtonTest.orderDeliveryOfContractCancelButtonTest(OrderDeliveryOfContractCancelButtonTest.java:11)
+
+expenseStructureTest(com.YouMagicPro.LKA_tests.OrderDeliveryOfContractDropdownListTest)  Time elapsed: 2.839 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 20dd28c83ae87535a45ea877f210e90c
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderDeliveryOfContractDropdownListTest.expenseStructureTest(OrderDeliveryOfContractDropdownListTest.java:11)
+
+orderToAdressCancelButtonClickTest_C25675(com.YouMagicPro.LKA_tests.OrderToAdressCancelButtonClickTest)  Time elapsed: 2.884 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: bf85d8902a8bc86467b8e7ac7ff1ba37
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderToAdressCancelButtonClickTest.orderToAdressCancelButtonClickTest_C25675(OrderToAdressCancelButtonClickTest.java:11)
+
+orderToAdressChangeNameTest_C25672(com.YouMagicPro.LKA_tests.OrderToAdressChangeNameTest)  Time elapsed: 20.955 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 99eab186fb4c9dc713d791039e83d410
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:217)
+	at com.YouMagicPro.LKA_tests.OrderToAdressChangeNameTest.orderToAdressChangeNameTest_C25672(OrderToAdressChangeNameTest.java:11)
+
+orderToAdressChangePhoneTest_C25677(com.YouMagicPro.LKA_tests.OrderToAdressChangePhoneTest)  Time elapsed: 2.827 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 3234515b5a20a4e9027effa59a48187b
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderToAdressChangePhoneTest.orderToAdressChangePhoneTest_C25677(OrderToAdressChangePhoneTest.java:11)
+
+OrderToAdressNoTextFieldFilledTest_C25679(com.YouMagicPro.LKA_tests.OrderToAdressNoTextFieldFilledTest)  Time elapsed: 2.848 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Script execution failed. Script: $('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr("href"); $(".iframe_rega").attr({src: atr_adm}).css({ display: "none"});$(".iframe_rega").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: "visible", display:"block" });});;
+ $ is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 95de01812f324177b138ca8a5decd3b0
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:440)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoadSecondAccount(TestBase.java:192)
+	at com.YouMagicPro.LKA_tests.OrderToAdressNoTextFieldFilledTest.OrderToAdressNoTextFieldFilledTest_C25679(OrderToAdressNoTextFieldFilledTest.java:11)
+
+soundFilesTest(com.YouMagicPro.LKA_tests.SoundFilesPageTest)  Time elapsed: 16.608 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at com.YouMagicPro.LKA_tests.SoundFilesPageTest.soundFilesTest(SoundFilesPageTest.java:21)
 

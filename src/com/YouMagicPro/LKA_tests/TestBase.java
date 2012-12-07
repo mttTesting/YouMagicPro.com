@@ -44,7 +44,7 @@ import org.testng.annotations.BeforeTest;
 	 
 	    @AfterClass(alwaysRun = true)
 	    protected void closeSession() {
-		    driver.close();
+		    driver.quit();
 	    }
 	 
 	    public static void assertEquals(Object actual, Object expected) {
@@ -145,7 +145,7 @@ import org.testng.annotations.BeforeTest;
 	    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
 	    	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
 	    	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-
+	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	js.executeScript("$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({src: atr_adm}).css({ display: \"none\"});$(\".iframe_rega\").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: \"visible\", display:\"block\" });});");
 	    	
@@ -187,7 +187,7 @@ import org.testng.annotations.BeforeTest;
 	    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
 	    	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
 	    	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-
+	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	js.executeScript("$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({src: atr_adm}).css({ display: \"none\"});$(\".iframe_rega\").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: \"visible\", display:\"block\" });});");
 	    	
@@ -228,9 +228,14 @@ import org.testng.annotations.BeforeTest;
     	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
     	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
     	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-
+    	try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	js.executeScript("$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({src: atr_adm}).css({ display: \"none\"});$(\".iframe_rega\").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: \"visible\", display:\"block\" });});");
+    	js.executeScript("logged_in = getCookie(\"umagicpro_logged_in\");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({ src: atr_adm}).css({display: \"none\" });$(\".iframe_rega\").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: \"visible\", display: \"block\"}); }); } else {loginAction(); }");
     	
     	
     	
