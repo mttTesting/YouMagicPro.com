@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKA_tests.ContractBankAccountTenInTextFieldTest">
+      <class name="com.YouMagicPro.LKA_tests.SoundFilesPageTest">
         <methods>
-          <include name="contractBankAccountTenInTextFieldTest_C14994"/>
-          <include name="startWebDriver"/>
-          <include name="closeSession"/>
+          <include name="soundFilesTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKA_tests.ContractBankAccountTenInTextFieldTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.SoundFilesPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

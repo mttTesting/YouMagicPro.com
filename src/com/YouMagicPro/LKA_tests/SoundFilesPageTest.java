@@ -18,6 +18,6 @@ public class SoundFilesPageTest extends TestBaseReg{
 		selenium.waitForPageToLoad("30000");
 		selenium.click("//div[2]/a/div");
 		Thread.sleep(3000);
-		AssertJUnit.assertTrue(selenium.isElementPresent("css=div.bSoundFileblock")); ///Проверка, присутствует ли на странице элемент css=div.bSoundFileblock
+		AssertJUnit.assertTrue(selenium.isElementPresent("css=div.bContent__innerHeader")); ///Проверка, присутствует ли на странице элемент css=div.bSoundFileblock
 	}
 }

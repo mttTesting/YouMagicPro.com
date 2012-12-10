@@ -120,8 +120,8 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void sendKeysAndAssert_inn(String keys, String errorString)
 	    {
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.id("edit-bank-details-inn")).click();// без клика и очистки поле не заполн€етс€
 	    	driver.findElement(By.id("edit-bank-details-inn")).clear();
@@ -133,136 +133,46 @@ import org.testng.annotations.BeforeTest;
 			assertEquals(driver.findElement(By.cssSelector("div.messages.error")).getText(), errorString);
 	    }
 	    public static void waitAdminPageToLoad()
-	    {
-	    	/*driver.get("http://account.umagicpro-pp.rnd.mtt/user/login/");
+	    { 	
+	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
 	    	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("100126");//ввод логина парол€
-	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
-	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
-	    	*/
-	    	
-	    	driver.get("http://youmagic.pro/");//открытие портала
-	    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
-	    	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
-	    	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    	JavascriptExecutor js = (JavascriptExecutor) driver;
-	    	js.executeScript("$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({src: atr_adm}).css({ display: \"none\"});$(\".iframe_rega\").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: \"visible\", display:\"block\" });});");
-	    	
-	    	
-	    	
-	    	
-	    	WebElement myElement = driver.findElement(By.xpath("//a[@id='entrance']/span"));
-	    	Actions builder = new Actions(driver);
-	    	//builder.click(myElement).build().perform();
-	    	
-	    	
-	    	
-	    	driver.switchTo().frame("iframe_autor");
-
-	    	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-name-1")));
 	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
-	    	
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
-	    	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='edit-submit-1']")));
-	    	//driver.findElement(By.xpath("//input[@id='edit-submit-1']")).click();//нажатие на кнопку "¬ход"
-	    	
-	    	myElement = driver.findElement(By.xpath("//input[@id='edit-submit-1']"));
-	    	builder.click(myElement).build().perform();
-	    	
+	    	driver.findElement(By.id("edit-submit-1")).click();
+	    
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
-	    	/*driver.get("http://account.umagicpro-pp.rnd.mtt/user/login/");
-	    	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("100126");//ввод логина парол€
-	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
-	    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
-	    	*/
-	    	
-	    	driver.get("http://youmagic.pro/");//открытие портала
-	    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
-	    	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
-	    	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    	JavascriptExecutor js = (JavascriptExecutor) driver;
-	    	js.executeScript("$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({ 'display': 'block'  }); var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({src: atr_adm}).css({ display: \"none\"});$(\".iframe_rega\").load(function () {$('.bLoginFormWrap_kn').css({'display': 'block'});$(this).css({ visibility: \"visible\", display:\"block\" });});");
-	    	
-	    	
-	    	
-	    	
-	    	WebElement myElement = driver.findElement(By.xpath("//a[@id='entrance']/span"));
-	    	Actions builder = new Actions(driver);
-	    	//builder.click(myElement).build().perform();
-	    	
-	    	
-	    	
-	    	driver.switchTo().frame("iframe_autor");
-
-	    	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-name-1")));
+	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
+	 
+	
 	    	driver.findElement(By.id("edit-name-1")).sendKeys("303327");//ввод логина, парол€
-	    	
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
-	    	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='edit-submit-1']")));
-	    	//driver.findElement(By.xpath("//input[@id='edit-submit-1']")).click();//нажатие на кнопку "¬ход"
 	    	
-	    	myElement = driver.findElement(By.xpath("//input[@id='edit-submit-1']"));
-	    	builder.click(myElement).build().perform();
+	    	driver.findElement(By.id("edit-submit-1")).click();
+
+	    	
+	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
+	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    }
+	    
+	    
+	    public static void  waitContractPageToLoad(){
+	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
+	    	
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
+	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
+	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
-	    }
-	    public static void  waitContractPageToLoad(){
-    	/*driver.get("http://account.umagicpro-pp.rnd.mtt/user/login/");
-    	
-    	driver.findElement(By.id("edit-name-1")).sendKeys("100126");//ввод логина парол€
-    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");		
-    	driver.findElement(By.id("edit-submit-1")).click();//нажатие на кнопку "¬ход"
-    	*/
-    	
-    	driver.get("http://youmagic.pro/");//открытие портала
-    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='entrance']/span")));
-    	//driver.findElement(By.xpath("//a[@id='entrance']/span")).click();
-    	//driver.findElement(By.xpath("//a[@href='http://account.youmagic.pro/user/login']")).click();//нажатие на кнопку "¬ход"
-    	try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	js.executeScript("logged_in = getCookie(\"umagicpro_logged_in\");if (logged_in == 0) {$('.gradient_back, .gradient_back_two, .div_abs_for_ifr').css({'display': 'block'});var atr_adm = $('.administrator').attr(\"href\"); $(\".iframe_rega\").attr({ src: atr_adm}).css({display: \"none\" });$(\".iframe_rega\").load(function () { $('.bLoginFormWrap_kn').css({'display': 'block'}); $(this).css({  visibility: \"visible\", display: \"block\"}); }); } else {loginAction(); }");
-    	
-    	
-    	
-    	
-    	WebElement myElement = driver.findElement(By.xpath("//a[@id='entrance']/span"));
-    	Actions builder = new Actions(driver);
-    	//builder.click(myElement).build().perform();
-    	
-    	
-    	
-    	driver.switchTo().frame("iframe_autor");
-
-    	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-name-1")));
-    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, парол€
-    	
-    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
-    	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='edit-submit-1']")));
-    	//driver.findElement(By.xpath("//input[@id='edit-submit-1']")).click();//нажатие на кнопку "¬ход"
-    	
-    	myElement = driver.findElement(By.xpath("//input[@id='edit-submit-1']"));
-    	builder.click(myElement).build().perform();
-    	
-    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
-    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.xpath("//div[5]/div[2]/span/a")).click(); //Ќажатие "ќформить"
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
+
 	    }
 	}

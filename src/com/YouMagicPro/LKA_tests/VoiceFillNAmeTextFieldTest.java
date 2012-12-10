@@ -30,5 +30,9 @@ public class VoiceFillNAmeTextFieldTest extends TestBase {
 	
 	
 	assertEquals(driver.findElement(By.xpath("//div[3]/div/div/span")).getText(), "Ì1");
+	
+	driver.findElement(By.xpath("//a[2]/span")).click();
+	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/div/span")));
+	driver.findElement(By.xpath("//a/div/span")).click();
 	}
 }
