@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
     	@Test
     	public void contractEndOfPageDataTest_C15062() {
     		waitContractPageToLoad();
-    		driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
-    		assertEquals(driver.findElement(By.xpath("//strong")).getText(), "74997043123]"); //проверка мобильного номера пользователя
-    		assertEquals(driver.findElement(By.xpath("//tr[2]/td/div/div/strong")).getText(), "74997043123"); //проверка номера аккаунта YM.Pro 
+    	//	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    //	driver.findElement(By.xpath("//td[2]/div/span")).click();
+
+    		assertEquals(driver.findElement(By.xpath("//strong")).getText(), "79857297409"); //проверка мобильного номера пользователя
+    		assertEquals(driver.findElement(By.xpath("//tr[2]/td/div/div/strong")).getText(), "79857297409"); //проверка номера аккаунта YM.Pro 
     		assertEquals(driver.findElement(By.xpath("//tr[3]/td/div/div/strong")).getText(), "AT с поддержкой SIP");//Тип абонентского устройства
     		assertEquals(driver.findElement(By.xpath("//td[2]/div/strong")).getText(), "ОАО «МТТ»");//Выбор оператора связи
     		assertEquals(driver.findElement(By.xpath("//tr[2]/td[2]/div/strong")).getText(), "Простой");//Тарифный план

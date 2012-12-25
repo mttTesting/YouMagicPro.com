@@ -123,11 +123,12 @@ import org.testng.annotations.BeforeTest;
 	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
-	    	driver.findElement(By.id("edit-bank-details-inn")).click();// без клика и очистки поле не заполняется
+	    	//driver.findElement(By.id("edit-bank-details-inn")).click();// без клика и очистки поле не заполняется
 	    	driver.findElement(By.id("edit-bank-details-inn")).clear();
 	    	driver.findElement(By.id("edit-bank-details-inn")).sendKeys(keys);	//Ввод в поле ввода Кор. счета
 	    	
-	    	driver.findElement(By.id("edit-submit")).click();
+	    	//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));
+	    	driver.findElement(By.xpath("//form/div/div[2]/input")).click();
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.messages.error")).getText(), errorString);
@@ -149,7 +150,7 @@ import org.testng.annotations.BeforeTest;
 	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
 	 
 	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303327");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303607");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	
 	    	driver.findElement(By.id("edit-submit-1")).click();
@@ -172,6 +173,9 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.xpath("//div[5]/div[2]/span/a")).click(); //Нажатие "Оформить"
+	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 
 	    }

@@ -29,7 +29,7 @@ import org.testng.annotations.BeforeTest;
 
 
 	public class TestBaseFF { 
-		public static FirefoxDriver driver;
+		public static WebDriver driver;
 		public static Wait wait;
 	 
 		@SuppressWarnings("deprecation")
@@ -39,7 +39,7 @@ import org.testng.annotations.BeforeTest;
 			
 			//System.setProperty("webdriver.chrome.driver", "C:\\workspace\\chromedriver.exe");
 			//WebDriver driver = new FirefoxDriver();
-			WebDriver driver = new FirefoxDriver();
+			driver = new FirefoxDriver();
 
 
 	    	wait = new WebDriverWait(driver, 120);
@@ -123,8 +123,8 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void sendKeysAndAssert_inn(String keys, String errorString)
 	    {
-	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.id("edit-bank-details-inn")).click();// без клика и очистки поле не заполняется
 	    	driver.findElement(By.id("edit-bank-details-inn")).clear();
@@ -146,6 +146,7 @@ import org.testng.annotations.BeforeTest;
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
@@ -175,6 +176,10 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.xpath("//div[5]/div[2]/span/a")).click(); //Нажатие "Оформить"
+	    	
+	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 
 	    }
