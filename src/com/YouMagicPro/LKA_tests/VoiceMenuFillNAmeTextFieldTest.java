@@ -24,11 +24,7 @@ public class VoiceMenuFillNAmeTextFieldTest extends TestBase {
 	driver.findElement(By.xpath("//div[3]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));
 	
-	driver.findElement(By.xpath("//div[4]/a/span")).click();
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div/div[2]/div/div/div/span/span/b")));
-	driver.findElement(By.xpath("//div[2]/div/div[2]/div/div/div/span/span/b")).click();
-	driver.findElement(By.xpath("//div[2]/div/div[2]/div/div/div/span/ul/li[2]")).click();
-	driver.findElement(By.xpath("//div[2]/span/span/span")).click();
-	driver.findElement(By.xpath("//div[2]/span/ul/li[2]")).click();
+	
+	driver.findElement(By.xpath("//div/input")).sendKeys("1111");
 	}
 }

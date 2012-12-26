@@ -7,8 +7,8 @@ public class ContractInn6NumbersInTextFieldTest  extends TestBase{
 	@Test
 	public void contractInn6NumbersInTextFieldTest_C15029() {
 	waitContractPageToLoad();
-	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	sendKeysAndAssert_inn("123456","ИНН должен состоять из 10 или 12 символов.");
 	}
