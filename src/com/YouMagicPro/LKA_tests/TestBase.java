@@ -52,8 +52,8 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void sendKeysAndAssert_bik(String keys, String errorString)
 		{
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 			driver.findElement(By.id("edit-bank-details-bik")).click();// без клика и очистки поле не заполняется
 			driver.findElement(By.id("edit-bank-details-bik")).clear();
@@ -64,12 +64,13 @@ import org.testng.annotations.BeforeTest;
 		}
 	    public static void sendKeysAndAssert_bankAccount(String keys, String errorString)
 		{
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
-			driver.findElement(By.id("edit-bank-details-bank-account")).click();// без клика и очистки поле не заполняется
-			driver.findElement(By.id("edit-bank-details-bank-account")).clear();
-			driver.findElement(By.id("edit-bank-details-bank-account")).sendKeys(keys);	//Ввод в поле ввода БИК
+			WebElement element = driver.findElement(By.id("edit-bank-details-bank-account"));
+			element.click();// без клика и очистки поле не заполняется
+			element.clear();
+			element.sendKeys(keys);	//Ввод в поле ввода БИК
 			
 			driver.findElement(By.id("edit-submit")).click();
 	    	
@@ -78,10 +79,10 @@ import org.testng.annotations.BeforeTest;
 		}
 	    public static void sendKeysAndAssert_cor(String keys, String errorString)
 	    {
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
-	    	driver.findElement(By.id("edit-bank-details-kor-account")).click();// без клика и очистки поле не заполняется
+			driver.findElement(By.id("edit-bank-details-kor-account")).click();// без клика и очистки поле не заполняется
 	    	driver.findElement(By.id("edit-bank-details-kor-account")).clear();
 	    	driver.findElement(By.id("edit-bank-details-kor-account")).sendKeys(keys);	//Ввод в поле ввода Кор. счета
 	    	
@@ -92,8 +93,8 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void sendKeysAndAssert_kpp(String keys, String errorString)
 	    {
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.id("edit-bank-details-kpp")).click();// без клика и очистки поле не заполняется
 	    	driver.findElement(By.id("edit-bank-details-kpp")).clear();
@@ -106,8 +107,8 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void sendKeysAndAssert_ogrn(String keys, String errorString)
 	    {
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	driver.findElement(By.id("edit-bank-details-ogrn")).click();// без клика и очистки поле не заполняется
 	    	driver.findElement(By.id("edit-bank-details-ogrn")).clear();
