@@ -29,9 +29,6 @@ public class VoiceMailEmptyNameTextFieldTest extends TestBase {
 	
 	
 	assertEquals(driver.findElement(By.xpath("//div/div/div[2]/div/div/div/div")).getText(), "Ќазвание меню об€зательно дл€ заполнени€.");
-	driver.findElement(By.xpath("//a[2]/span")).click();
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/div/span")));
-	driver.findElement(By.xpath("//a/div/span")).click();
 	
 	}
 }

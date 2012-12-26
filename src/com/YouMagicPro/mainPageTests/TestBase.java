@@ -38,7 +38,7 @@ import com.thoughtworks.selenium.Selenium;
 	    protected void startWebDriver() throws SecurityException, IOException {
 			System.setProperty("webdriver.chrome.driver", "C:\\GitWorkspace\\chromedriver.exe");
 	    	WebDriver driver = new ChromeDriver();
-	    	Selenium selenium = new WebDriverBackedSelenium(driver, "http://umagicpro-pp.rnd.mtt/");
+	    	Selenium selenium = new WebDriverBackedSelenium(driver, "http://www.youmagic.pro");
 	    	
 	    }
 	 

@@ -2,24 +2,29 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29297" started-at="2012-12-26T09:35:52Z" finished-at="2012-12-26T09:36:22Z">
+  <suite name="Default suite" duration-ms="21688" started-at="2012-12-26T11:54:49Z" finished-at="2012-12-26T11:55:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29297" started-at="2012-12-26T09:35:52Z" finished-at="2012-12-26T09:36:22Z">
-      <class name="com.YouMagicPro.LKA_tests.ContractInnChooseFormTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractInnChooseFormTest@47ced484]" name="startWebDriver" is-config="true" duration-ms="2478" started-at="2012-12-26T13:35:52Z" finished-at="2012-12-26T13:35:55Z">
+    <test name="Default test" duration-ms="21688" started-at="2012-12-26T11:54:49Z" finished-at="2012-12-26T11:55:11Z">
+      <class name="com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="setUp" is-config="true" duration-ms="7433" started-at="2012-12-26T15:54:49Z" finished-at="2012-12-26T15:54:57Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="contractInnChooseForm_C15047()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractInnChooseFormTest@47ced484]" name="contractInnChooseForm_C15047" duration-ms="23790" started-at="2012-12-26T13:35:55Z" finished-at="2012-12-26T13:36:19Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="registrationCloseVerificationWindowTest()[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="registrationCloseVerificationWindowTest" duration-ms="13844" started-at="2012-12-26T15:54:57Z" finished-at="2012-12-26T15:55:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contractInnChooseForm_C15047 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractInnChooseFormTest@47ced484]" name="closeSession" is-config="true" duration-ms="3025" started-at="2012-12-26T13:36:19Z" finished-at="2012-12-26T13:36:22Z">
+        </test-method> <!-- registrationCloseVerificationWindowTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="tearDown" is-config="true" duration-ms="400" started-at="2012-12-26T15:55:11Z" finished-at="2012-12-26T15:55:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.ContractInnChooseFormTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
