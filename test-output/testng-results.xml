@@ -2,29 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21688" started-at="2012-12-26T11:54:49Z" finished-at="2012-12-26T11:55:11Z">
+  <suite name="Default suite" duration-ms="18071" started-at="2013-01-10T06:39:04Z" finished-at="2013-01-10T06:39:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21688" started-at="2012-12-26T11:54:49Z" finished-at="2012-12-26T11:55:11Z">
-      <class name="com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="setUp" is-config="true" duration-ms="7433" started-at="2012-12-26T15:54:49Z" finished-at="2012-12-26T15:54:57Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="18071" started-at="2013-01-10T06:39:04Z" finished-at="2013-01-10T06:39:22Z">
+      <class name="com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="startWebDriver" is-config="true" duration-ms="3086" started-at="2013-01-10T10:39:04Z" finished-at="2013-01-10T10:39:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registrationCloseVerificationWindowTest()[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="registrationCloseVerificationWindowTest" duration-ms="13844" started-at="2012-12-26T15:54:57Z" finished-at="2012-12-26T15:55:11Z">
+        </test-method> <!-- startWebDriver -->
+        <test-method status="PASS" signature="orderByPickUpChangeNameTest_C25668()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="orderByPickUpChangeNameTest_C25668" duration-ms="13218" started-at="2013-01-10T10:39:07Z" finished-at="2013-01-10T10:39:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationCloseVerificationWindowTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest@4e8d7ddd]" name="tearDown" is-config="true" duration-ms="400" started-at="2012-12-26T15:55:11Z" finished-at="2012-12-26T15:55:11Z">
+        </test-method> <!-- orderByPickUpChangeNameTest_C25668 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="closeSession" is-config="true" duration-ms="1747" started-at="2013-01-10T10:39:20Z" finished-at="2013-01-10T10:39:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.YouMagicPro.registration.RegistrationCloseVerificationWindowTest -->
+        </test-method> <!-- closeSession -->
+      </class> <!-- com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,14 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 97, Failures: 33, Errors: 0, Skipped: 0, Time elapsed: 1,786.861 sec <<< FAILURE!
-voiceMailChooseSoundTest_C15294(com.YouMagicPro.LKA_tests.VoiceMailChooseSoundTest)  Time elapsed: 8.839 sec  <<< FAILURE!
+Tests run: 97, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1,881.518 sec <<< FAILURE!
+buyingAdditionalInternalNumberTextFieldTest_C15112(com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest)  Time elapsed: 9.189 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Element is not clickable at point (555, 380). Other element would receive the click: <img id="1" class="slideimage" src="/sites/all/modules/contrib/umagicpro_instructions/images/home.png" data-title="Благодарим вас за выбор YouMagic.Pro!"> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 66 milliseconds
+Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 8fbb70b42f6d5f2c4e69bccdedae2f68
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:147)
+	at com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest.buyingAdditionalInternalNumberTextFieldTest_C15112(BuyingAdditionalInternalNumberTextFieldTest.java:11)
+
+contractCorAccountTenInTextFieldTest_C15000(com.YouMagicPro.LKA_tests.ContractCorAccountTenInTextFieldTest)  Time elapsed: 8.8 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Element is not clickable at point (868.5, 44). Other element would receive the click: <div class="sl_head">...</div> (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 130 milliseconds
+Command duration or timeout: 165 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
 System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: c4098896a7cd2e3d25331a56fb755bcc
+Session ID: ab50733c0b10f19043721fe4475625af
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -18,57 +37,16 @@ Session ID: c4098896a7cd2e3d25331a56fb755bcc
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:145)
-	at com.YouMagicPro.LKA_tests.VoiceMailChooseSoundTest.voiceMailChooseSoundTest_C15294(VoiceMailChooseSoundTest.java:10)
+	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:173)
+	at com.YouMagicPro.LKA_tests.ContractCorAccountTenInTextFieldTest.contractCorAccountTenInTextFieldTest_C15000(ContractCorAccountTenInTextFieldTest.java:8)
 
-voiceMailEmptyNameTextFieldTest_C19851(com.YouMagicPro.LKA_tests.VoiceMailEmptyNameTextFieldTest)  Time elapsed: 18.733 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 32 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: ee58e441281ba0a713bd657123333235
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
-	at com.YouMagicPro.LKA_tests.VoiceMailEmptyNameTextFieldTest.voiceMailEmptyNameTextFieldTest_C19851(VoiceMailEmptyNameTextFieldTest.java:32)
-
-voiceFillNAmeTextFieldTest_C15293(com.YouMagicPro.LKA_tests.VoiceMenuFillNAmeTextFieldTest)  Time elapsed: 14.885 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 39 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 344a50e53b09230dc5c40a839a1ab2c8
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:301)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:386)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:293)
-	at com.YouMagicPro.LKA_tests.VoiceMenuFillNAmeTextFieldTest.voiceFillNAmeTextFieldTest_C15293(VoiceMenuFillNAmeTextFieldTest.java:27)
-
-contractBankAccountLettersInTextFieldTest_C14995(com.YouMagicPro.LKA_tests.ContractBankAccountLettersInTextFieldTest)  Time elapsed: 9.08 sec  <<< FAILURE!
+expenseStructureAdditionalNumbersFeeTest_C15096(com.YouMagicPro.LKA_tests.ExpenseStructureAdditionalNumbersFeeTest)  Time elapsed: 11.231 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Element is not clickable at point (868.5, 44). Other element would receive the click: <div class="sl_head">...</div> (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 219 milliseconds
+Command duration or timeout: 136 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
 System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: 39e7ab070795c62ce767282d243ab76e
+Session ID: afe284b7580b301f57eead624524c263
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -78,16 +56,16 @@ Session ID: 39e7ab070795c62ce767282d243ab76e
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:172)
-	at com.YouMagicPro.LKA_tests.ContractBankAccountLettersInTextFieldTest.contractBankAccountLettersInTextFieldTest_C14995(ContractBankAccountLettersInTextFieldTest.java:11)
+	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:146)
+	at com.YouMagicPro.LKA_tests.ExpenseStructureAdditionalNumbersFeeTest.expenseStructureAdditionalNumbersFeeTest_C15096(ExpenseStructureAdditionalNumbersFeeTest.java:11)
 
-contractBikTest1inTextField_C15022(com.YouMagicPro.LKA_tests.ContractBik1inTextFieldTest)  Time elapsed: 12.224 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
+notificationsCheckFieldsTest_C15141(com.YouMagicPro.LKA_tests.NotificationsCheckFieldsTest)  Time elapsed: 10.987 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Element is not clickable at point (118.5, 506). Other element would receive the click: <div class="snoska">...</div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
 Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
 System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
 Driver info: driver.version: RemoteWebDriver
-Session ID: 48db19375fb47e24469d1aebaf1e8ef8
+Session ID: 736f97e3bda1591d5dc7ecc76cfe9986
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,487 +75,14 @@ Session ID: 48db19375fb47e24469d1aebaf1e8ef8
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_bik(TestBase.java:55)
-	at com.YouMagicPro.LKA_tests.ContractBik1inTextFieldTest.contractBikTest1inTextField_C15022(ContractBik1inTextFieldTest.java:10)
+	at com.YouMagicPro.LKA_tests.NotificationsCheckFieldsTest.notificationsCheckFieldsTest_C15141(NotificationsCheckFieldsTest.java:20)
 
-contractBikTest_C15025(com.YouMagicPro.LKA_tests.ContractBikLettersAndNumbersInTextFieldTest)  Time elapsed: 11.863 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 37b4e133a07251d37d66eec57d78a0ec
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_bik(TestBase.java:55)
-	at com.YouMagicPro.LKA_tests.ContractBikLettersAndNumbersInTextFieldTest.contractBikTest_C15025(ContractBikLettersAndNumbersInTextFieldTest.java:10)
-
-contractBikTestLettersInTextField_C15023(com.YouMagicPro.LKA_tests.ContractBikLettersInTextFieldTest)  Time elapsed: 12.03 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: a94427ae00051ede3bd00dab5a71150e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_bik(TestBase.java:55)
-	at com.YouMagicPro.LKA_tests.ContractBikLettersInTextFieldTest.contractBikTestLettersInTextField_C15023(ContractBikLettersInTextFieldTest.java:13)
-
-contractBikSymbolsInTextFieldTest_C15026(com.YouMagicPro.LKA_tests.ContractBikSymbolsInTextFieldTest)  Time elapsed: 13.935 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 19 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: f352d531b513efe34608fa8c8d856231
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_bik(TestBase.java:55)
-	at com.YouMagicPro.LKA_tests.ContractBikSymbolsInTextFieldTest.contractBikSymbolsInTextFieldTest_C15026(ContractBikSymbolsInTextFieldTest.java:13)
-
-contractCheckDocumentTest_C14986(com.YouMagicPro.LKA_tests.ContractCheckDocumentTest)  Time elapsed: 12.267 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: d7aed24aca2f144172e8f1542094397c
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.ContractCheckDocumentTest.contractCheckDocumentTest_C14986(ContractCheckDocumentTest.java:12)
-
-contractCorAccount19NumbersTest_C15005(com.YouMagicPro.LKA_tests.ContractCorAccount19NumbersTest)  Time elapsed: 11.803 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 9f5ba31c34a8f48e56a21aa38adcea45
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.ContractCorAccount19NumbersTest.contractCorAccount19NumbersTest_C15005(ContractCorAccount19NumbersTest.java:13)
-
-contractCorAccountTenInTextFieldTest_C15000(com.YouMagicPro.LKA_tests.ContractCorAccountLettersAndNumbersTextFieldTest)  Time elapsed: 11.882 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 49b34137d836f0f3eb5ee3ee1b48bbb3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_cor(TestBase.java:81)
-	at com.YouMagicPro.LKA_tests.ContractCorAccountLettersAndNumbersTextFieldTest.contractCorAccountTenInTextFieldTest_C15000(ContractCorAccountLettersAndNumbersTextFieldTest.java:10)
-
-contractCorAccountLettersInTextFieldTest_C15001(com.YouMagicPro.LKA_tests.ContractCorAccountLettersInTextFieldTest)  Time elapsed: 12.692 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 8b5b32ca40559ca89c34c404f4eaf603
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_cor(TestBase.java:81)
-	at com.YouMagicPro.LKA_tests.ContractCorAccountLettersInTextFieldTest.contractCorAccountLettersInTextFieldTest_C15001(ContractCorAccountLettersInTextFieldTest.java:10)
-
-contractCorAccountOneInTextFieldTest_C14499(com.YouMagicPro.LKA_tests.ContractCorAccountOneInTextFieldTest)  Time elapsed: 11.936 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: a18dec396081f7307d9aa9ec8c1d75eb
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_cor(TestBase.java:81)
-	at com.YouMagicPro.LKA_tests.ContractCorAccountOneInTextFieldTest.contractCorAccountOneInTextFieldTest_C14499(ContractCorAccountOneInTextFieldTest.java:10)
-
-contractCorAccountSymbolsInTextFieldTest_C15003(com.YouMagicPro.LKA_tests.ContractCorAccountSymbolsInTextFieldTest)  Time elapsed: 11.979 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: ed60be41d210e3625242e8b2d7b25a24
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_cor(TestBase.java:81)
-	at com.YouMagicPro.LKA_tests.ContractCorAccountSymbolsInTextFieldTest.contractCorAccountSymbolsInTextFieldTest_C15003(ContractCorAccountSymbolsInTextFieldTest.java:10)
-
-contractCorAccountTenInTextFieldTest_C15000(com.YouMagicPro.LKA_tests.ContractCorAccountTenInTextFieldTest)  Time elapsed: 12.64 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 297a4422aeecef3c53f941f375949c8a
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_cor(TestBase.java:81)
-	at com.YouMagicPro.LKA_tests.ContractCorAccountTenInTextFieldTest.contractCorAccountTenInTextFieldTest_C15000(ContractCorAccountTenInTextFieldTest.java:10)
-
-contractEndOfPageDataTest_C15062(com.YouMagicPro.LKA_tests.ContractEndOfPageDataTest)  Time elapsed: 12.249 sec  <<< FAILURE!
-java.lang.AssertionError: expected [79857297409] but found [74997044972]
+OrderToAdressNoTextFieldFilledTest_C25679(com.YouMagicPro.LKA_tests.OrderToAdressNoTextFieldFilledTest)  Time elapsed: 13.039 sec  <<< FAILURE!
+java.lang.AssertionError: expected [На вашем балансе недостаточно денег для совершения данной операции. Пожалуйста, пополните счет.] but found [Вы находитесь в состоянии финансовой блокировки. Пожалуйста, пополните счет.]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:165)
 	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
-	at com.YouMagicPro.LKA_tests.ContractEndOfPageDataTest.contractEndOfPageDataTest_C15062(ContractEndOfPageDataTest.java:17)
-
-fillInContractDataTest_C14998(com.YouMagicPro.LKA_tests.ContractFillInDataTest)  Time elapsed: 8.874 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Element is not clickable at point (868.5, 44). Other element would receive the click: <div class="sl_head">...</div> (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 177 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 486d60ca68345f5339d37bf450c1d71b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitContractPageToLoad(TestBase.java:172)
-	at com.YouMagicPro.LKA_tests.ContractFillInDataTest.fillInContractDataTest_C14998(ContractFillInDataTest.java:13)
-
-contractInn6NumbersInTextFieldTest_C15029(com.YouMagicPro.LKA_tests.ContractInn6NumbersInTextFieldTest)  Time elapsed: 11.774 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 9837e0d502fd7d2db6ff9a271fe52091
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.ContractInn6NumbersInTextFieldTest.contractInn6NumbersInTextFieldTest_C15029(ContractInn6NumbersInTextFieldTest.java:10)
-
-contractInnChooseForm_C15047(com.YouMagicPro.LKA_tests.ContractInnChooseFormTest)  Time elapsed: 11.694 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 6451e4efa1b09c69ca5c02f1da474bd5
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.ContractInnChooseFormTest.contractInnChooseForm_C15047(ContractInnChooseFormTest.java:12)
-
-contractKppTest_C15049(com.YouMagicPro.LKA_tests.ContractKpp6NumbersInTextFieldTest)  Time elapsed: 11.93 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 818009b096ed4d3bd1dd14b0876541c3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_kpp(TestBase.java:95)
-	at com.YouMagicPro.LKA_tests.ContractKpp6NumbersInTextFieldTest.contractKppTest_C15049(ContractKpp6NumbersInTextFieldTest.java:13)
-
-contractKppTest_C15054(com.YouMagicPro.LKA_tests.ContractKppLettersAndNumbersTest)  Time elapsed: 12.128 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 1278d7dc23bdf91469161921238d5ae3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_kpp(TestBase.java:95)
-	at com.YouMagicPro.LKA_tests.ContractKppLettersAndNumbersTest.contractKppTest_C15054(ContractKppLettersAndNumbersTest.java:13)
-
-contractKppTest_C15050(com.YouMagicPro.LKA_tests.ContractKppLettersTest)  Time elapsed: 12.12 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: b94e0f5f994182f18f34598a332c61df
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_kpp(TestBase.java:95)
-	at com.YouMagicPro.LKA_tests.ContractKppLettersTest.contractKppTest_C15050(ContractKppLettersTest.java:13)
-
-contractKppTest_C15048(com.YouMagicPro.LKA_tests.ContractKppOneNumberInTextFieldTest)  Time elapsed: 12.012 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: edd239574c363db384fa05c73eefcff7
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_kpp(TestBase.java:95)
-	at com.YouMagicPro.LKA_tests.ContractKppOneNumberInTextFieldTest.contractKppTest_C15048(ContractKppOneNumberInTextFieldTest.java:13)
-
-contractKppTest_C15051(com.YouMagicPro.LKA_tests.ContractKppSymbolsTest)  Time elapsed: 12.117 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: aea32360088ec9b1fd2b46730252e846
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_kpp(TestBase.java:95)
-	at com.YouMagicPro.LKA_tests.ContractKppSymbolsTest.contractKppTest_C15051(ContractKppSymbolsTest.java:13)
-
-contractOgrn6NumbersInTextFieldTest_C15055(com.YouMagicPro.LKA_tests.ContractOgrn6NumbersInTextFieldTest)  Time elapsed: 11.816 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: b626483441f116bd87c01ff307d1fed5
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_ogrn(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.ContractOgrn6NumbersInTextFieldTest.contractOgrn6NumbersInTextFieldTest_C15055(ContractOgrn6NumbersInTextFieldTest.java:11)
-
-contractOgrnLettersAndNumbersInTextFieldTest_C15057(com.YouMagicPro.LKA_tests.ContractOgrnLettersAndNumbersInTextFieldTest)  Time elapsed: 12.29 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: dfefcd35db452690f6dbab9cd81365f0
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_ogrn(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.ContractOgrnLettersAndNumbersInTextFieldTest.contractOgrnLettersAndNumbersInTextFieldTest_C15057(ContractOgrnLettersAndNumbersInTextFieldTest.java:11)
-
-contractOgrnLettersInTextFieldTest_C15056(com.YouMagicPro.LKA_tests.ContractOgrnLettersInTextFieldTest)  Time elapsed: 11.925 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 0ba95bc0282e07c035dc85a3239e3748
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_ogrn(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.ContractOgrnLettersInTextFieldTest.contractOgrnLettersInTextFieldTest_C15056(ContractOgrnLettersInTextFieldTest.java:11)
-
-contractOgrnOneNumberInTextFieldTest_C15053(com.YouMagicPro.LKA_tests.ContractOgrnOneNumberInTextFieldTest)  Time elapsed: 12.238 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 8cb2fcd83861cbf688ce36780f482fbf
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_ogrn(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.ContractOgrnOneNumberInTextFieldTest.contractOgrnOneNumberInTextFieldTest_C15053(ContractOgrnOneNumberInTextFieldTest.java:10)
-
-contractFillBankAccountTest(com.YouMagicPro.LKA_tests.ContractOgrnSymbolsTest)  Time elapsed: 13.571 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotVisibleException: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 18 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: ea14e5d5511e975f3b0e4edb1a8b0c77
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.sendKeysAndAssert_ogrn(TestBase.java:109)
-	at com.YouMagicPro.LKA_tests.ContractOgrnSymbolsTest.contractFillBankAccountTest(ContractOgrnSymbolsTest.java:13)
-
-employeesEditProfileTest_C15253(com.YouMagicPro.LKA_tests.EmployeesAddEmployeeTest)  Time elapsed: 9.044 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Element is not clickable at point (868.5, 44). Other element would receive the click: <div class="sl_head">...</div> (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 131 milliseconds
-Build info: version: '2.26.0', revision: '18040', time: '2012-11-02 09:44:45'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_09'
-Driver info: driver.version: RemoteWebDriver
-Session ID: cc8f31e2421ddd26c70d4c1c4cb326b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.YouMagicPro.LKA_tests.TestBase.waitAdminPageToLoad(TestBase.java:145)
-	at com.YouMagicPro.LKA_tests.EmployeesAddEmployeeTest.employeesEditProfileTest_C15253(EmployeesAddEmployeeTest.java:11)
-
-employeesEditProfileTest_C15253(com.YouMagicPro.LKA_tests.EmployeesEditProfileTest)  Time elapsed: 17.435 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Внутренний номер *] but found [Фамилия *]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
-	at com.YouMagicPro.LKA_tests.EmployeesEditProfileTest.employeesEditProfileTest_C15253(EmployeesEditProfileTest.java:26)
-
-orderByEmailOrderWithoutDocTypeCheckedTest_C25656(com.YouMagicPro.LKA_tests.OrderByEmailOrderWithoutDocTypeCheckedTest)  Time elapsed: 12.681 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Необходимо выбрать тип документа.] but found [За указанный период не найдено ни одного документа указанного типа!]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
-	at com.YouMagicPro.LKA_tests.OrderByEmailOrderWithoutDocTypeCheckedTest.orderByEmailOrderWithoutDocTypeCheckedTest_C25656(OrderByEmailOrderWithoutDocTypeCheckedTest.java:26)
-
-orderByPickUpOrderWithoutDocTypeCheckedTest_C25663(com.YouMagicPro.LKA_tests.OrderByPickUpOrderWithoutDocTypeCheckedTest)  Time elapsed: 12.744 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Необходимо выбрать тип документа.] but found [За указанный период не найдено ни одного документа указанного типа!]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.YouMagicPro.LKA_tests.TestBase.assertEquals(TestBase.java:51)
-	at com.YouMagicPro.LKA_tests.OrderByPickUpOrderWithoutDocTypeCheckedTest.orderByPickUpOrderWithoutDocTypeCheckedTest_C25663(OrderByPickUpOrderWithoutDocTypeCheckedTest.java:26)
+	at com.YouMagicPro.LKA_tests.OrderToAdressNoTextFieldFilledTest.OrderToAdressNoTextFieldFilledTest_C25679(OrderToAdressNoTextFieldFilledTest.java:18)
 

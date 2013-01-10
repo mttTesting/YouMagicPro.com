@@ -11,7 +11,7 @@ public class NotificationsCheckFieldsTest  extends TestBase{
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();
 		
-    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+    	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
     	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 		
 		

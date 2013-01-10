@@ -44,7 +44,7 @@ import com.thoughtworks.selenium.Selenium;
 	 
 	    @AfterClass(alwaysRun = true)
 	    protected void closeSession() {
-		    driver.close();
+		    driver.quit();
 	    }
 	 
 	}

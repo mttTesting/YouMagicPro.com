@@ -151,7 +151,7 @@ import org.testng.annotations.BeforeTest;
 	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
 	 
 	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303607");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("303787");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	
 	    	driver.findElement(By.id("edit-submit-1")).click();
