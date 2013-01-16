@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18071" started-at="2013-01-10T06:39:04Z" finished-at="2013-01-10T06:39:22Z">
+  <suite name="Default suite" duration-ms="19413" started-at="2013-01-16T12:18:31Z" finished-at="2013-01-16T12:18:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18071" started-at="2013-01-10T06:39:04Z" finished-at="2013-01-10T06:39:22Z">
-      <class name="com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="startWebDriver" is-config="true" duration-ms="3086" started-at="2013-01-10T10:39:04Z" finished-at="2013-01-10T10:39:07Z">
+    <test name="Default test" duration-ms="19413" started-at="2013-01-16T12:18:31Z" finished-at="2013-01-16T12:18:51Z">
+      <class name="com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="startWebDriver" is-config="true" duration-ms="1689" started-at="2013-01-16T16:18:31Z" finished-at="2013-01-16T16:18:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="orderByPickUpChangeNameTest_C25668()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="orderByPickUpChangeNameTest_C25668" duration-ms="13218" started-at="2013-01-10T10:39:07Z" finished-at="2013-01-10T10:39:20Z">
+        <test-method status="PASS" signature="yourNumbersAddNewIInternalNumberTest_C15293()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="yourNumbersAddNewIInternalNumberTest_C15293" duration-ms="14649" started-at="2013-01-16T16:18:33Z" finished-at="2013-01-16T16:18:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderByPickUpChangeNameTest_C25668 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest@47520a06]" name="closeSession" is-config="true" duration-ms="1747" started-at="2013-01-10T10:39:20Z" finished-at="2013-01-10T10:39:22Z">
+        </test-method> <!-- yourNumbersAddNewIInternalNumberTest_C15293 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="closeSession" is-config="true" duration-ms="3071" started-at="2013-01-16T16:18:48Z" finished-at="2013-01-16T16:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.OrderByPickUpChangeNameTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
