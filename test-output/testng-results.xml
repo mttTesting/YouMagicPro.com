@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19413" started-at="2013-01-16T12:18:31Z" finished-at="2013-01-16T12:18:51Z">
+  <suite name="Default suite" duration-ms="16035" started-at="2013-01-16T12:49:36Z" finished-at="2013-01-16T12:49:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19413" started-at="2013-01-16T12:18:31Z" finished-at="2013-01-16T12:18:51Z">
-      <class name="com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="startWebDriver" is-config="true" duration-ms="1689" started-at="2013-01-16T16:18:31Z" finished-at="2013-01-16T16:18:33Z">
+    <test name="Default test" duration-ms="16035" started-at="2013-01-16T12:49:36Z" finished-at="2013-01-16T12:49:52Z">
+      <class name="com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="startWebDriver" is-config="true" duration-ms="1693" started-at="2013-01-16T16:49:36Z" finished-at="2013-01-16T16:49:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="yourNumbersAddNewIInternalNumberTest_C15293()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="yourNumbersAddNewIInternalNumberTest_C15293" duration-ms="14649" started-at="2013-01-16T16:18:33Z" finished-at="2013-01-16T16:18:48Z">
+        <test-method status="PASS" signature="groupsAddAndDeleteEmployeeTest_C25636()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="groupsAddAndDeleteEmployeeTest_C25636" duration-ms="12272" started-at="2013-01-16T16:49:38Z" finished-at="2013-01-16T16:49:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- yourNumbersAddNewIInternalNumberTest_C15293 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest@17a1d061]" name="closeSession" is-config="true" duration-ms="3071" started-at="2013-01-16T16:18:48Z" finished-at="2013-01-16T16:18:51Z">
+        </test-method> <!-- groupsAddAndDeleteEmployeeTest_C25636 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="closeSession" is-config="true" duration-ms="2067" started-at="2013-01-16T16:49:50Z" finished-at="2013-01-16T16:49:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.YourNumbersAddNewIInternalNumberTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

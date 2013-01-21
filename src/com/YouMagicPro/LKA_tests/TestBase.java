@@ -180,4 +180,13 @@ import org.testng.annotations.BeforeTest;
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 
 	    }
+	    
+	    public static void sleep(){
+	    	try {
+	    		Thread.sleep(4000);
+	    	} catch (InterruptedException e) {
+	    		// TODO Auto-generated catch block
+	    		e.printStackTrace();
+	    	}
+	    }
 	}
