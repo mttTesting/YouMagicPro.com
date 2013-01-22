@@ -144,7 +144,9 @@ import org.testng.annotations.BeforeTest;
 	    
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	    	sleep();
+	    	driver.findElement(By.xpath("//div[@id='umagicproConfirmDialog-d7db61d4eaa86fd123239ffe2246b1db']/div/div[2]/table/tbody/tr/td[2]/div/span")).click();
+	    	sleep();
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
@@ -153,11 +155,12 @@ import org.testng.annotations.BeforeTest;
 	
 	    	driver.findElement(By.id("edit-name-1")).sendKeys("303787");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
-	    	
+
 	    	driver.findElement(By.id("edit-submit-1")).click();
 
 	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
+	    	sleep();
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    }
 	    
@@ -170,11 +173,15 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
+	    	sleep();
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	sleep();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
-	    	
+	    	sleep();
 	    	driver.findElement(By.xpath("//div[5]/div[2]/span/a")).click(); //Нажатие "Оформить"
+	    	sleep();
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	sleep();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    	
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
@@ -183,7 +190,7 @@ import org.testng.annotations.BeforeTest;
 	    
 	    public static void sleep(){
 	    	try {
-	    		Thread.sleep(4000);
+	    		Thread.sleep(6000);
 	    	} catch (InterruptedException e) {
 	    		// TODO Auto-generated catch block
 	    		e.printStackTrace();

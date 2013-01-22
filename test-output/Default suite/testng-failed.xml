@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest">
+      <class name="com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest">
         <methods>
           <include name="startWebDriver"/>
           <include name="closeSession"/>
-          <include name="groupsAddAndDeleteEmployeeTest_C25636"/>
+          <include name="voiceMailChooseSoundTest_C15294"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

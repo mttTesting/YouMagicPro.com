@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16035" started-at="2013-01-16T12:49:36Z" finished-at="2013-01-16T12:49:52Z">
+  <suite name="Default suite" duration-ms="24535" started-at="2013-01-22T12:52:25Z" finished-at="2013-01-22T12:52:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16035" started-at="2013-01-16T12:49:36Z" finished-at="2013-01-16T12:49:52Z">
-      <class name="com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="startWebDriver" is-config="true" duration-ms="1693" started-at="2013-01-16T16:49:36Z" finished-at="2013-01-16T16:49:38Z">
+    <test name="Default test" duration-ms="24535" started-at="2013-01-22T12:52:25Z" finished-at="2013-01-22T12:52:49Z">
+      <class name="com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest@275d13c3]" name="startWebDriver" is-config="true" duration-ms="1367" started-at="2013-01-22T16:52:25Z" finished-at="2013-01-22T16:52:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="groupsAddAndDeleteEmployeeTest_C25636()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="groupsAddAndDeleteEmployeeTest_C25636" duration-ms="12272" started-at="2013-01-16T16:49:38Z" finished-at="2013-01-16T16:49:50Z">
+        <test-method status="PASS" signature="buyingAdditionalInternalNumberTextFieldTest_C15112()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest@275d13c3]" name="buyingAdditionalInternalNumberTextFieldTest_C15112" duration-ms="20560" started-at="2013-01-22T16:52:26Z" finished-at="2013-01-22T16:52:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- groupsAddAndDeleteEmployeeTest_C25636 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest@3e527586]" name="closeSession" is-config="true" duration-ms="2067" started-at="2013-01-16T16:49:50Z" finished-at="2013-01-16T16:49:52Z">
+        </test-method> <!-- buyingAdditionalInternalNumberTextFieldTest_C15112 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest@275d13c3]" name="closeSession" is-config="true" duration-ms="2606" started-at="2013-01-22T16:52:46Z" finished-at="2013-01-22T16:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.GroupsAddAndDeleteEmployeeTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.BuyingAdditionalInternalNumberTextFieldTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

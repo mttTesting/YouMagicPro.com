@@ -10,7 +10,6 @@ public class VoiceMenuChooseSoundTest extends TestBase {
 	waitAdminPageToLoad();
 	
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"
-	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 	
 	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
@@ -37,8 +36,8 @@ public class VoiceMenuChooseSoundTest extends TestBase {
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/div/div/span")));
 	
 	
-	assertEquals(driver.findElement(By.xpath("//div[3]/div/div/span")).getText(), "М1");
-	
+	assertEquals(driver.findElement(By.xpath("//div[2]/div/span")).getText(), "М1");
+	sleep();
 	driver.findElement(By.xpath("//a[2]/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/div/span")));
 	driver.findElement(By.xpath("//a/div/span")).click();
