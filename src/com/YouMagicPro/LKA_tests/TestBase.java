@@ -141,12 +141,12 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	driver.findElement(By.id("edit-submit-1")).click();
-	    
+	    	
+	    	sleep();
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	sleep();
-	    	driver.findElement(By.xpath("//div[@id='umagicproConfirmDialog-d7db61d4eaa86fd123239ffe2246b1db']/div/div[2]/table/tbody/tr/td[2]/div/span")).click();
-	    	sleep();
+	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
@@ -157,11 +157,12 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 
 	    	driver.findElement(By.id("edit-submit-1")).click();
-
 	    	
+	    	sleep();
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	sleep();
-	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
+	    	driver.findElement(By.xpath("//div[@id='instructionContent']/div/div[4]/a")).click();
+	    	
 	    }
 	    
 	    
@@ -172,6 +173,7 @@ import org.testng.annotations.BeforeTest;
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
+	    	sleep();
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	sleep();
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
