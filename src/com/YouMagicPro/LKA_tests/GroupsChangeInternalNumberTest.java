@@ -13,15 +13,18 @@ import org.testng.annotations.Test;
 public class GroupsChangeInternalNumberTest extends TestBase {
 	@Test
 	public void groupsChangeInternalNumberTest_C15192() {
-	waitAdminPageToLoadSecondAccount();
+	waitAdminPageToLoad();
 	
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"
 	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();//закрываем всплывающие окна
-	//driver.findElement(By.xpath("//td[2]/div/span")).click();
+	sleep();
+	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	sleep();
 	
 	driver.findElement(By.xpath("//div[3]/a/div")).click();//нажимаем "группы
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[7]/div/a/span")));//ждем загрузки страницы
-	
+	sleep();
+	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	sleep();
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы
 	
@@ -29,12 +32,7 @@ public class GroupsChangeInternalNumberTest extends TestBase {
 	driver.findElement(By.id("edit-group-id")).sendKeys("126");
 	driver.findElement(By.id("edit-submit")).click();
 	
-	try {
-		Thread.sleep(10000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	sleep();
 	
 	assertEquals(driver.findElement(By.xpath("//td[4]/div/span")).getText(), "6126");
 	

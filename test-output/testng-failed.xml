@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest">
+      <class name="com.YouMagicPro.LKA_tests.BalanceMinimalSumTest">
         <methods>
           <include name="startWebDriver"/>
-          <include name="voiceFillNAmeTextFieldTest_C15293"/>
           <include name="closeSession"/>
+          <include name="balanceMinimalSumTest_15095"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.BalanceMinimalSumTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

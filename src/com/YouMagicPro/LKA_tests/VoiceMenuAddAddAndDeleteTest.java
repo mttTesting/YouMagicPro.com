@@ -25,10 +25,10 @@ public class VoiceMenuAddAddAndDeleteTest extends TestBase {
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));
 	assertEquals(driver.findElement(By.xpath("//div/label")).getText(), "Название");
 	
-	driver.findElement(By.id("edit-ivr-name")).sendKeys("Меню");
+	driver.findElement(By.id("edit-ivr-name")).sendKeys("М1");
 	driver.findElement(By.id("edit-submit")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/div/div/span")));
-	assertEquals(driver.findElement(By.xpath("//div[3]/div/div/span")).getText(), "Меню");
+	assertEquals(driver.findElement(By.xpath("//div[2]/div/span")).getText(), "М1");
 	driver.findElement(By.xpath("//a[2]/span")).click();
 	driver.findElement(By.xpath("//a/div/span")).click();
 	

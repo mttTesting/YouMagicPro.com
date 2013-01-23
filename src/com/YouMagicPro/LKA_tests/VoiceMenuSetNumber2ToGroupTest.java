@@ -25,7 +25,7 @@ public class VoiceMenuSetNumber2ToGroupTest extends TestBase {
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));
 	assertEquals(driver.findElement(By.xpath("//div/label")).getText(), "Название");
 	
-	driver.findElement(By.id("edit-ivr-name")).sendKeys("Меню");
+	driver.findElement(By.id("edit-ivr-name")).sendKeys("М1");
 	
 	driver.findElement(By.xpath("//div[@id='ivr-action-2']/span")).click();
 	driver.findElement(By.xpath("//div[@id='edit-group-2-ivr-action-2-wrapper']/span/span/span")).click();
@@ -34,8 +34,8 @@ public class VoiceMenuSetNumber2ToGroupTest extends TestBase {
 	sleep();
 	driver.findElement(By.id("edit-submit")).click();
 	sleep();
-	driver.findElement(By.xpath("//a[2]/span")).click();
-	driver.findElement(By.xpath("//a/div/span")).click();
+	driver.findElement(By.xpath("//div[2]/div[4]/a[2]/span")).click();
+	driver.findElement(By.xpath("//td/a/div")).click();
 	
 	}
 }

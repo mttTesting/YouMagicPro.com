@@ -37,7 +37,7 @@ public class VoiceMailChooseSoundTest extends TestBase {
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/div/div/span")));
 	
 	
-	assertEquals(driver.findElement(By.xpath("//div[3]/div/div/span")).getText(), "Ì1");
+	assertEquals(driver.findElement(By.xpath("//div[2]/div/span")).getText(), "Ì");
 	
 	driver.findElement(By.xpath("//a[2]/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/div/span")));

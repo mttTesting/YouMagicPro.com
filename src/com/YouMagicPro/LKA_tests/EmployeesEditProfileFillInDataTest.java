@@ -39,7 +39,7 @@ public class EmployeesEditProfileFillInDataTest extends TestBase{
 		
 		
 		driver.findElement(By.id("edit-submit")).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/div/div[2]/div/div/div/div")));
+		sleep();
 		
 		assertEquals(driver.findElement(By.xpath("//td[3]/div/div[2]/div/div/div")).getText(), "Сотрудники");
 		

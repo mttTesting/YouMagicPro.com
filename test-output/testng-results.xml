@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43953" started-at="2013-01-23T07:14:13Z" finished-at="2013-01-23T07:14:57Z">
+  <suite name="Default suite" duration-ms="54755" started-at="2013-01-23T08:43:27Z" finished-at="2013-01-23T08:44:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43953" started-at="2013-01-23T07:14:13Z" finished-at="2013-01-23T07:14:57Z">
-      <class name="com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest@45500f57]" name="startWebDriver" is-config="true" duration-ms="1735" started-at="2013-01-23T11:14:13Z" finished-at="2013-01-23T11:14:15Z">
+    <test name="Default test" duration-ms="54755" started-at="2013-01-23T08:43:27Z" finished-at="2013-01-23T08:44:21Z">
+      <class name="com.YouMagicPro.LKA_tests.GroupsAverageLengthOfTalkTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAverageLengthOfTalkTest@4fbc7b65]" name="startWebDriver" is-config="true" duration-ms="1695" started-at="2013-01-23T12:43:27Z" finished-at="2013-01-23T12:43:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="voiceFillNAmeTextFieldTest_C15293()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest@45500f57]" name="voiceFillNAmeTextFieldTest_C15293" duration-ms="39527" started-at="2013-01-23T11:14:15Z" finished-at="2013-01-23T11:14:55Z">
+        <test-method status="PASS" signature="groupsMiddleLengthOfTalkTest_C25633()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAverageLengthOfTalkTest@4fbc7b65]" name="groupsMiddleLengthOfTalkTest_C25633" duration-ms="50184" started-at="2013-01-23T12:43:28Z" finished-at="2013-01-23T12:44:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- voiceFillNAmeTextFieldTest_C15293 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest@45500f57]" name="closeSession" is-config="true" duration-ms="2688" started-at="2013-01-23T11:14:55Z" finished-at="2013-01-23T11:14:57Z">
+        </test-method> <!-- groupsMiddleLengthOfTalkTest_C25633 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAverageLengthOfTalkTest@4fbc7b65]" name="closeSession" is-config="true" duration-ms="2873" started-at="2013-01-23T12:44:19Z" finished-at="2013-01-23T12:44:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.VoiceFillNAmeTextFieldTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.GroupsAverageLengthOfTalkTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

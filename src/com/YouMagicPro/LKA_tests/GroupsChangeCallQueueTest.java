@@ -13,14 +13,17 @@ import org.testng.annotations.Test;
 public class GroupsChangeCallQueueTest extends TestBase {
 	@Test
 	public void groupsChangeCallQueueTest_C15193() {
-	waitAdminPageToLoadSecondAccount();
+	waitAdminPageToLoad();
 	
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"
 	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();//закрываем всплывающие окна
-	//driver.findElement(By.xpath("//td[2]/div/span")).click();
-	
+	sleep();
+	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	sleep();
 	driver.findElement(By.xpath("//div[3]/a/div")).click();//нажимаем "группы
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[7]/div/a/span")));//ждем загрузки страницы
+	sleep();
+	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	sleep();
 	
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы
@@ -30,12 +33,7 @@ public class GroupsChangeCallQueueTest extends TestBase {
 	
 	driver.findElement(By.id("edit-submit")).click();
 	
-	try {
-		Thread.sleep(10000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	sleep();
 	
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы
