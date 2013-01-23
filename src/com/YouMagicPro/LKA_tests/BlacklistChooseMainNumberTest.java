@@ -8,7 +8,7 @@ public class BlacklistChooseMainNumberTest extends TestBase {
 	@Test
 	public void BlacklistChooseMainNumberTest_C15149() {
 	waitAdminPageToLoad();
-	
+	sleep();
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"
 	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 	
@@ -20,9 +20,10 @@ public class BlacklistChooseMainNumberTest extends TestBase {
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//form/div/div/span")));//ожидание загрузки страницы
 	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
-	
-	driver.findElement(By.xpath("//div[@id='blacklist-items']/div/div/div/div/table/tbody/tr/td/span")).click();
-	driver.findElement(By.xpath("//div[@id='blacklist-items']/div/div/div/div/table/tbody/tr/td/span")).click();
+	driver.findElement(By.id("edit-blacklist-items-add-bl-owner")).click();
+	sleep();
+	driver.findElement(By.xpath("//div[@id='edit-blacklist-items-new-number-choose-owner-number-wrapper']/span/span")).click();
+	driver.findElement(By.xpath("//div[@id='edit-blacklist-items-new-number-choose-owner-number-wrapper']/span/span/span")).click();
 	
 	}
 }

@@ -28,8 +28,8 @@ public class GroupsOneInInternalNumberTextFieldTest extends TestBase {
 
 	driver.findElement(By.id("edit-submit")).click();
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/div/div[2]/div/div")));//ждем загрузку страницы
+	sleep();
 
-	assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), "Длина номера группы должна быть от 3 до 4 цифр.");//проверяем, вывелось ли предупреждение
+	assertEquals(driver.findElement(By.cssSelector("div.messages.error")).getText(), "Длина номера группы должна быть от 3 до 4 цифр.");//проверяем, вывелось ли предупреждение
 	}
 }
