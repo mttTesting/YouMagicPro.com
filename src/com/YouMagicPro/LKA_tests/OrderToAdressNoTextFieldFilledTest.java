@@ -16,7 +16,5 @@ public class OrderToAdressNoTextFieldFilledTest  extends TestBase{
 		driver.findElement(By.xpath("//form/div/div/div/div[3]/input")).click();//нажатие на "сохранить"
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div/div/div/div/ul/li")));//ожидание загрузки страницы
 		assertEquals(driver.findElement(By.xpath("//div[2]/div/div/div/div/ul/li")).getText(), "Заполните поле индекс.");//проверяем, вывелось ли предупреждение о незаполненных полях
-		
 	}
-
 }

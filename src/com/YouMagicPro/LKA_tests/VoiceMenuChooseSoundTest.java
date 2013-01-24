@@ -39,7 +39,7 @@ public class VoiceMenuChooseSoundTest extends TestBase {
 		
 		assertEquals(driver.findElement(By.xpath("//div[2]/div/span")).getText(), "Ì1");
 		
-		driver.findElement(By.xpath("//a[2]/span")).click();
+		driver.findElement(By.xpath("//div[2]/div[4]/a[2]/span")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/div/span")));
 		driver.findElement(By.xpath("//a/div/span")).click();
 		
