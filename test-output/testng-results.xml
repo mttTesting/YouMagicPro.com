@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44410" started-at="2013-01-24T08:25:46Z" finished-at="2013-01-24T08:26:31Z">
+  <suite name="Default suite" duration-ms="52440" started-at="2013-01-31T06:22:58Z" finished-at="2013-01-31T06:23:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44410" started-at="2013-01-24T08:25:46Z" finished-at="2013-01-24T08:26:31Z">
-      <class name="com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest@22c249c5]" name="startWebDriver" is-config="true" duration-ms="1726" started-at="2013-01-24T12:25:46Z" finished-at="2013-01-24T12:25:48Z">
+    <test name="Default test" duration-ms="52440" started-at="2013-01-31T06:22:58Z" finished-at="2013-01-31T06:23:50Z">
+      <class name="com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest@4dc1dfa9]" name="startWebDriver" is-config="true" duration-ms="2694" started-at="2013-01-31T10:22:58Z" finished-at="2013-01-31T10:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="voiceMailChooseSoundTest_C15294()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest@22c249c5]" name="voiceMailChooseSoundTest_C15294" duration-ms="39866" started-at="2013-01-24T12:25:48Z" finished-at="2013-01-24T12:26:28Z">
+        <test-method status="PASS" signature="contractBankAccountLettersAndNumbersTest_C14496()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest@4dc1dfa9]" name="contractBankAccountLettersAndNumbersTest_C14496" duration-ms="46603" started-at="2013-01-31T10:23:00Z" finished-at="2013-01-31T10:23:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- voiceMailChooseSoundTest_C15294 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest@22c249c5]" name="closeSession" is-config="true" duration-ms="2807" started-at="2013-01-24T12:26:28Z" finished-at="2013-01-24T12:26:31Z">
+        </test-method> <!-- contractBankAccountLettersAndNumbersTest_C14496 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest@4dc1dfa9]" name="closeSession" is-config="true" duration-ms="3132" started-at="2013-01-31T10:23:47Z" finished-at="2013-01-31T10:23:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.VoiceMenuChooseSoundTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

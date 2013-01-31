@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKS_tests.AddAndDeleteContactTest">
+      <class name="com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest">
         <methods>
-          <include name="addAndDeleteContactTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="startWebDriver"/>
+          <include name="closeSession"/>
+          <include name="contractBankAccountLettersAndNumbersTest_C14496"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKS_tests.AddAndDeleteContactTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.ContractBankAccountLettersAndNumbersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
