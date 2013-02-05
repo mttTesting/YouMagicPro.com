@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest">
+      <class name="com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest">
         <methods>
           <include name="startWebDriver"/>
-          <include name="voiceMenuSetNumber7ToRetryOfListeningTest_C15347"/>
+          <include name="groupsOneInInternalNumberTextFieldTest_C15188"/>
           <include name="closeSession"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

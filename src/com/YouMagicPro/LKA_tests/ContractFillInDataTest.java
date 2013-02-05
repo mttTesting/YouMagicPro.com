@@ -16,8 +16,10 @@ public class ContractFillInDataTest  extends TestBase{
     		driver.findElement(By.id("edit-buisness-form-company")).sendKeys("1234");//заполнение данными
     		driver.findElement(By.id("edit-bank-details-inn")).sendKeys("1234123411");
     		driver.findElement(By.id("edit-buisness-form-contact-man-wrapper-contact-man-base-value")).sendKeys("1234");
-    		driver.findElement(By.id("edit-latitude")).sendKeys("1234");
-    		driver.findElement(By.id("edit-law-latitude")).sendKeys("1234");
+    		driver.findElement(By.id("edit-latitude")).clear();
+    		driver.findElement(By.id("edit-latitude")).sendKeys("12345555555555555555555555555555555555555");
+    		driver.findElement(By.id("edit-law-latitude")).clear();
+    		driver.findElement(By.id("edit-law-latitude")).sendKeys("1234555555555555555555555555555555555555555");
     		driver.findElement(By.id("edit-company-phone")).sendKeys("1234");
     		driver.findElement(By.id("edit-bank-details-ogrn")).sendKeys("1234123412341");
     		driver.findElement(By.id("edit-bank-details-kpp")).sendKeys("123456789");

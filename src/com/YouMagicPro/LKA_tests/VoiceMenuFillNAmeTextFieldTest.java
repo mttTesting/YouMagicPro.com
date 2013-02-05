@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class VoiceMenuFillNAmeTextFieldTest extends TestBase {
 	@Test
-	public void voiceFillNAmeTextFieldTest_C15293() {
+	public void voiceMenuFillNAmeTextFieldTest_C15293() {
 	waitAdminPageToLoad();
 	
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"

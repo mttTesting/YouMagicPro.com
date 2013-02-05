@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42809" started-at="2013-02-04T05:25:34Z" finished-at="2013-02-04T05:26:17Z">
+  <suite name="Default suite" duration-ms="60153" started-at="2013-02-05T13:36:08Z" finished-at="2013-02-05T13:37:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42809" started-at="2013-02-04T05:25:34Z" finished-at="2013-02-04T05:26:17Z">
-      <class name="com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest@3a0a8d45]" name="startWebDriver" is-config="true" duration-ms="1711" started-at="2013-02-04T09:25:34Z" finished-at="2013-02-04T09:25:36Z">
+    <test name="Default test" duration-ms="60153" started-at="2013-02-05T13:36:08Z" finished-at="2013-02-05T13:37:08Z">
+      <class name="com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest@ac0cac8]" name="startWebDriver" is-config="true" duration-ms="1715" started-at="2013-02-05T17:36:08Z" finished-at="2013-02-05T17:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="FAIL" signature="voiceMenuSetNumber7ToRetryOfListeningTest_C15347()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest@3a0a8d45]" name="voiceMenuSetNumber7ToRetryOfListeningTest_C15347" duration-ms="38079" started-at="2013-02-04T09:25:36Z" finished-at="2013-02-04T09:26:14Z">
+        <test-method status="FAIL" signature="groupsOneInInternalNumberTextFieldTest_C15188()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest@ac0cac8]" name="groupsOneInInternalNumberTextFieldTest_C15188" duration-ms="55406" started-at="2013-02-05T17:36:09Z" finished-at="2013-02-05T17:37:05Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[The element could not be found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 35 milliseconds
+Command duration or timeout: 34 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:09:54'
 System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
 Driver info: driver.version: RemoteWebDriver
-Session ID: e3ca25c387e93fec8320bf9039e309a4]]>
+Session ID: cbfff0dba63a94fd7d02bd67ffa637f3]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 35 milliseconds
+Command duration or timeout: 34 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:09:54'
 System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
 Driver info: driver.version: RemoteWebDriver
-Session ID: e3ca25c387e93fec8320bf9039e309a4
+Session ID: cbfff0dba63a94fd7d02bd67ffa637f3
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -38,10 +38,10 @@ Session ID: e3ca25c387e93fec8320bf9039e309a4
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:353)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:345)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
-	at com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest.voiceMenuSetNumber7ToRetryOfListeningTest_C15347(VoiceMenuSetNumber7ToRetryOfListeningTest.java:38)
+	at com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest.groupsOneInInternalNumberTextFieldTest_C15188(GroupsOneInInternalNumberTextFieldTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,12 +71,12 @@ Session ID: e3ca25c387e93fec8320bf9039e309a4
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- voiceMenuSetNumber7ToRetryOfListeningTest_C15347 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest@3a0a8d45]" name="closeSession" is-config="true" duration-ms="3006" started-at="2013-02-04T09:26:14Z" finished-at="2013-02-04T09:26:17Z">
+        </test-method> <!-- groupsOneInInternalNumberTextFieldTest_C15188 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest@ac0cac8]" name="closeSession" is-config="true" duration-ms="3011" started-at="2013-02-05T17:37:05Z" finished-at="2013-02-05T17:37:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.VoiceMenuSetNumber7ToRetryOfListeningTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.GroupsOneInInternalNumberTextFieldTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

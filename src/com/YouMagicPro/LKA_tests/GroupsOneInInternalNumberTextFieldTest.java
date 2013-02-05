@@ -30,6 +30,6 @@ public class GroupsOneInInternalNumberTextFieldTest extends TestBase {
 	
 	sleep();
 
-	assertEquals(driver.findElement(By.cssSelector("div.messages.error")).getText(), "Длина номера группы должна быть от 3 до 4 цифр.");//проверяем, вывелось ли предупреждение
+	assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), "Длина номера группы должна быть от 3 до 4 цифр.");//проверяем, вывелось ли предупреждение
 	}
 }
