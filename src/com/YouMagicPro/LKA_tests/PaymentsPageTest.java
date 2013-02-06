@@ -13,7 +13,7 @@ public class PaymentsPageTest extends TestBaseReg{
 		selenium.click("css=span.modal_cansel_button_text");
 	
 		selenium.click("link=Платежи"); //Переход в меню "Платежи"->"Платежи и документы"
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 
 		AssertJUnit.assertTrue(selenium.isElementPresent("id=edit-from-date-datepicker-popup-0")); //Проверка присутствия на странице соответствующих элементов
 		AssertJUnit.assertTrue(selenium.isElementPresent("id=edit-to-date-datepicker-popup-0"));

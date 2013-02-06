@@ -36,10 +36,12 @@ public class TestBaseReg {
 		selenium.open("http://youmagic.pro/"); //Вход на сайт http://umagicpro-pp/
 		selenium.click("link=Администратор");
 		selenium.waitForPageToLoad("90000");
+		 sleep();
 		selenium.type("id=edit-name-1", "303187"); //ввод логина и пароля
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "Вход"
 		selenium.waitForPageToLoad("60000");
+		sleep();
 	}
 	 public static void sleep(){
 	    	try {
