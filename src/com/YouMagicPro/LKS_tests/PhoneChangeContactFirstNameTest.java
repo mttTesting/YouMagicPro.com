@@ -7,26 +7,27 @@ import com.registration.tests.TestBaseReg;
 
 public class PhoneChangeContactFirstNameTest extends TestBaseReg{
 	@Test
-	public void  phoneCreateAndDeleteGroupTest () throws Exception {	 
+	public void  ChangeContactFirstNameTest () throws Exception {	 
 		openAndLoginLKS();
-		selenium.click("link=–едактировать контакты");//Ќажатие на пункт меню "–едактирование контактов"
+		selenium.click("//td[2]/a");//нажатие кнопки добавлени€ контакта
+		Thread.sleep(7000);
+		selenium.type("//form/div/div/div[2]/input", "z1");// ввод данных контакта
+		selenium.type("id=edit-contact-telephone1", "1");
+		selenium.click("id=edit-save"); //"сохранить"
 		Thread.sleep(4000);
-		selenium.click("xpath=(//a[contains(text(),'ред.')])[2]");//Ќажатие на кнопку редактировани€ контакта
+		
+		selenium.click("//div[4]/nobr/a");
 		Thread.sleep(4000);
-		selenium.type("id=edit-contact-first-name", "B1");//добавить контакт ("B1")
+		selenium.click("//tr[4]/td[2]/a");
+		Thread.sleep(4000);	
+		
+		selenium.type("id=edit-contact-first-name", "t1");
 		selenium.click("id=edit-save");//сохранить
 		Thread.sleep(4000);
-		selenium.click("id=edit-submit");//сохранить
-		Thread.sleep(4000);
-		AssertJUnit.assertTrue(selenium.isTextPresent("B1"));//проверка добавлени€ контакта
-		selenium.click("link=–едактировать контакты");//Ќажатие на пункт меню "–едактирование контактов"
-		Thread.sleep(4000);
-		selenium.click("xpath=(//a[contains(text(),'ред.')])[2]");//Ќажатие на кнопку редактировани€ контакта
-		Thread.sleep(4000);
-		selenium.type("id=edit-contact-first-name", "x1");//изменить им€ контакта
-		selenium.click("id=edit-save");//сохранить
-		Thread.sleep(4000);
-		selenium.click("id=edit-submit");//сохранить
-		Thread.sleep(4000);
+
+		selenium.click("//td[2]/a[2]");
+		Thread.sleep(3000);
+		selenium.click("xpath=(//input[@id='edit-submit'])[2]");
+		Thread.sleep(3000);	
 	}
 }

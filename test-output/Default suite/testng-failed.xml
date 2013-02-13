@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YouMagicPro.LKA_tests.SupportChooseTopicWriteTextTest">
+      <class name="com.YouMagicPro.LKS_tests.AddAndDeleteContactTest">
         <methods>
-          <include name="startWebDriver"/>
-          <include name="supportChooseTopicWriteTextTest_C15200"/>
-          <include name="closeSession"/>
+          <include name="addAndDeleteContactTest_C15324"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.YouMagicPro.LKA_tests.SupportChooseTopicWriteTextTest -->
+      </class> <!-- com.YouMagicPro.LKS_tests.AddAndDeleteContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -63,7 +63,7 @@ import com.thoughtworks.selenium.Selenium;
 	    	driver.get("http://account.umagicpro-pp.rnd.mtt/user/login");//открытие портала  	    	
 	    	driver.findElement(By.xpath("//a[contains(@href, '/user/login/account')]")).click();
 	    	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("0776006416");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("0776008257");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
@@ -130,7 +130,7 @@ import com.thoughtworks.selenium.Selenium;
 	    }
 	    public static void sleep(){
 	    	try {
-	    		Thread.sleep(4000);
+	    		Thread.sleep(8000);
 	    	} catch (InterruptedException e) {
 	    		e.printStackTrace();
 	    	}

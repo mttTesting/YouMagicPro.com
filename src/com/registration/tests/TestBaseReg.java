@@ -52,15 +52,16 @@ public class TestBaseReg {
 	    }
 	public void openAndLoginLKS() {
 		// TODO Auto-generated method stub
-		selenium.open("http://umagicpro-pp.rnd.mtt/"); //¬ход на сайт http://umagicpro-pp/
+		selenium.open("http://youmagic.pro/"); //¬ход на сайт http://umagicpro-pp/
 		selenium.click("link=—отрудник");
 		selenium.waitForPageToLoad("90000");
-		selenium.type("id=edit-name-1", "0776008257"); //ввод логина и парол€
+		selenium.type("id=edit-name-1", "0776006416"); //ввод логина и парол€
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "¬ход"
-		selenium.waitForPageToLoad("60000");
+		selenium.waitForPageToLoad("90000");
 		
 		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		sleep();
 	}
+
 }
