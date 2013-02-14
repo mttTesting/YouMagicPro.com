@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27565" started-at="2013-02-14T08:57:20Z" finished-at="2013-02-14T08:57:48Z">
+  <suite name="Default suite" duration-ms="65209" started-at="2013-02-14T10:30:32Z" finished-at="2013-02-14T10:31:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27565" started-at="2013-02-14T08:57:20Z" finished-at="2013-02-14T08:57:48Z">
-      <class name="com.YouMagicPro.LKA_tests.BuyingAdditionalExternalNumberCloseWindowTest">
-        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalExternalNumberCloseWindowTest@701b9555]" name="startWebDriver" is-config="true" duration-ms="2309" started-at="2013-02-14T12:57:20Z" finished-at="2013-02-14T12:57:22Z">
+    <test name="Default test" duration-ms="65209" started-at="2013-02-14T10:30:32Z" finished-at="2013-02-14T10:31:37Z">
+      <class name="com.YouMagicPro.LKA_tests.GroupsAddAndDeleteGroupTest">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteGroupTest@22c249c5]" name="startWebDriver" is-config="true" duration-ms="1349" started-at="2013-02-14T14:30:32Z" finished-at="2013-02-14T14:30:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method status="PASS" signature="BuyingAdditionalExternalNumberCloseWindowTest_C15110()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalExternalNumberCloseWindowTest@701b9555]" name="BuyingAdditionalExternalNumberCloseWindowTest_C15110" duration-ms="22609" started-at="2013-02-14T12:57:22Z" finished-at="2013-02-14T12:57:45Z">
+        <test-method status="PASS" signature="groupsAddAndDeleteGroupTest_C15195C15186C25629()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteGroupTest@22c249c5]" name="groupsAddAndDeleteGroupTest_C15195C15186C25629" duration-ms="60695" started-at="2013-02-14T14:30:33Z" finished-at="2013-02-14T14:31:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BuyingAdditionalExternalNumberCloseWindowTest_C15110 -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.BuyingAdditionalExternalNumberCloseWindowTest@701b9555]" name="closeSession" is-config="true" duration-ms="2638" started-at="2013-02-14T12:57:45Z" finished-at="2013-02-14T12:57:48Z">
+        </test-method> <!-- groupsAddAndDeleteGroupTest_C15195C15186C25629 -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.YouMagicPro.LKA_tests.GroupsAddAndDeleteGroupTest@22c249c5]" name="closeSession" is-config="true" duration-ms="3155" started-at="2013-02-14T14:31:34Z" finished-at="2013-02-14T14:31:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- com.YouMagicPro.LKA_tests.BuyingAdditionalExternalNumberCloseWindowTest -->
+      </class> <!-- com.YouMagicPro.LKA_tests.GroupsAddAndDeleteGroupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
