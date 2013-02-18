@@ -7,10 +7,9 @@ import com.registration.tests.TestBaseReg;
 
 public class ClickOnPasswordChangeTest extends TestBaseReg{
 	@Test
-public void clickOnPasswordChangeTest () throws Exception {	 
+public void clickOnPasswordChangeTest_C15122 () throws Exception {	 
 		openAndLogin();
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
-		selenium.click("css=span.modal_cansel_button_text");
+
 		selenium.click("//div[4]/a");
 		
 		selenium.click("//a[contains(text(),'Сменить пароль')]"); //Нажатие ссылки "Сменить пароль"

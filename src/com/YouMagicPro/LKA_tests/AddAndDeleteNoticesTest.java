@@ -7,11 +7,9 @@ import com.registration.tests.TestBaseReg;
 
 public class AddAndDeleteNoticesTest extends TestBaseReg{
 	@Test
-	public void addAndDeleteNoticesTest() throws Exception {
+	public void addAndDeleteNoticesTest_C15148() throws Exception {
 		openAndLogin();
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
-		selenium.click("css=span.modal_cansel_button_text");
-		
+
 		selenium.click("link=Настройки"); //Переход в меню "Настройки"->" Уведомления "
 		selenium.waitForPageToLoad("30000");
 		selenium.click("//div[7]/a/div");

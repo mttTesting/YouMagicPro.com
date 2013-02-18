@@ -15,7 +15,7 @@ public class YourNumbersAddNewNumberTest extends TestBase {
 	
 	driver.findElement(By.xpath("//a/div")).click();//нажимаем "настройки"
 	//driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+//	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span.bSongFiles_AddFileText")));//ожидание загрузки страницы
 	driver.findElement(By.xpath("//div[4]/div/a/span")).click();

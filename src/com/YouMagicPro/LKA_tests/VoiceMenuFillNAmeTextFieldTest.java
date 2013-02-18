@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class VoiceMenuFillNAmeTextFieldTest extends TestBase {
 	@Test
-	public void voiceMenuFillNAmeTextFieldTest_C15293() {
+	public void voiceFillNAmeTextFieldTest_C15293() {
 	waitAdminPageToLoad();
 	
 	driver.findElement(By.xpath("//div[2]/div/div/div/span/a")).click();//нажимаем "настройки"
@@ -18,8 +18,8 @@ public class VoiceMenuFillNAmeTextFieldTest extends TestBase {
 	
 	driver.findElement(By.xpath("//div[4]/a/div")).click();
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
+//	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	driver.findElement(By.xpath("//div[3]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));

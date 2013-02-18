@@ -14,19 +14,18 @@ public class VoiceMenuSetNumber5ToVoiceMailTest extends TestBase {
 	
 	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
-	sleep();
 	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	driver.findElement(By.xpath("//div[4]/a/div")).click();
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
+	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	driver.findElement(By.xpath("//div[3]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));
 	assertEquals(driver.findElement(By.xpath("//div/label")).getText(), "Название");
 	
-	driver.findElement(By.id("edit-ivr-name")).sendKeys("М1");
+	driver.findElement(By.id("edit-ivr-name")).sendKeys("Меню");
 	
 	driver.findElement(By.xpath("//div[@id='ivr-action-5']/span")).click();
 	driver.findElement(By.xpath("//div[@id='edit-group-5-ivr-action-5-wrapper']/span/span/span")).click();
@@ -36,8 +35,8 @@ public class VoiceMenuSetNumber5ToVoiceMailTest extends TestBase {
 	sleep();
 	driver.findElement(By.id("edit-submit")).click();
 	sleep();
-	driver.findElement(By.xpath("//div[2]/div[4]/a[2]/span")).click();
-	driver.findElement(By.xpath("//td/a/div")).click();
+	driver.findElement(By.xpath("//a[2]/span")).click();
+	driver.findElement(By.xpath("//a/div/span")).click();
 	
 	}
 }

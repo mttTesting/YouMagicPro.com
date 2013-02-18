@@ -22,8 +22,8 @@ public class GroupsChangeCallQueueTest extends TestBase {
 	sleep();
 	driver.findElement(By.xpath("//div[3]/a/div")).click();//нажимаем "группы
 	sleep();
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
-	sleep();
+	//driver.findElement(By.xpath("//td[2]/div/span")).click();
+	//sleep();
 	
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы
@@ -33,7 +33,12 @@ public class GroupsChangeCallQueueTest extends TestBase {
 	
 	driver.findElement(By.id("edit-submit")).click();
 	
-	sleep();
+	try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы

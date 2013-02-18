@@ -59,7 +59,7 @@ import org.testng.annotations.BeforeTest;
 			driver.findElement(By.id("edit-bank-details-bik")).clear();
 			driver.findElement(By.id("edit-bank-details-bik")).sendKeys(keys);	//Ввод в поле ввода БИК
 			driver.findElement(By.id("edit-submit")).click();
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 		}
 	    public static void sendKeysAndAssert_bankAccount(String keys, String errorString)
@@ -74,7 +74,7 @@ import org.testng.annotations.BeforeTest;
 			
 			driver.findElement(By.id("edit-submit")).click();
 	    	
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 		}
 	    public static void sendKeysAndAssert_cor(String keys, String errorString)
@@ -88,7 +88,7 @@ import org.testng.annotations.BeforeTest;
 	    	
 	    	driver.findElement(By.id("edit-submit")).click();
 	    	
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 	    }
 	    public static void sendKeysAndAssert_kpp(String keys, String errorString)
@@ -102,7 +102,7 @@ import org.testng.annotations.BeforeTest;
 	    	
 	    	driver.findElement(By.id("edit-submit")).click();
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 	    }
 	    public static void sendKeysAndAssert_ogrn(String keys, String errorString)
@@ -116,7 +116,7 @@ import org.testng.annotations.BeforeTest;
 	    	
 	    	driver.findElement(By.id("edit-submit")).click();
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 	    }
 	    public static void sendKeysAndAssert_inn(String keys, String errorString)
@@ -131,14 +131,14 @@ import org.testng.annotations.BeforeTest;
 	    	//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));
 	    	driver.findElement(By.xpath("//form/div/div[2]/input")).click();
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));//ожидание загрузки страницы
+			//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.messages.error")));//ожидание загрузки страницы
 			assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), errorString);
 	    }
 	    public static void waitAdminPageToLoad()
 	    { 	
-	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
+	    	driver.get("http://account.umagicpro-pp.rnd.mtt/user/login");//открытие портала  	    	
 	    	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("100235");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
@@ -150,36 +150,36 @@ import org.testng.annotations.BeforeTest;
 	    }
 	    public static void waitAdminPageToLoadSecondAccount()
 	    {
-	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
+	    	driver.get("http://account.umagicpro-pp.rnd.mtt/user/login");//открытие портала  	    	
 	 
 	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303787");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("100236");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
-
-	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
+	    	driver.findElement(By.id("edit-submit-1")).click();
+
 	    	sleep();
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
 	    	sleep();
-	    	driver.findElement(By.xpath("//div[@id='instructionContent']/div/div[4]/a")).click();
 	    	
+	    	driver.findElement(By.xpath("//div[@id='instructionContent']/div/div[4]/a")).click();
 	    }
 	    
 	    
 	    public static void  waitContractPageToLoad(){
-	    	driver.get("http://account.youmagic.pro/user/login");//открытие портала  	    	
+	    	driver.get("http://account.umagicpro-pp.rnd.mtt/user/login");//открытие портала  	    	
 	    	
-	    	driver.findElement(By.id("edit-name-1")).sendKeys("303187");//ввод логина, пароля
+	    	driver.findElement(By.id("edit-name-1")).sendKeys("100235");//ввод логина, пароля
 	    	driver.findElement(By.id("edit-pass-1")).sendKeys("1234");
 	    	driver.findElement(By.id("edit-submit-1")).click();
 	    	
 	    	sleep();
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.bPopup__eClose.instructions-close")));//ожидание загрузки страницы
-	    	sleep();
+	    	
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
 	    	sleep();
 	    	driver.findElement(By.xpath("//td[2]/div/span")).click();
-	    	sleep();
+	    	
 	    	driver.findElement(By.xpath("//div[5]/div[2]/span/a")).click(); //Нажатие "Оформить"
 	    	sleep();
 	    	driver.findElement(By.cssSelector("a.bPopup__eClose.instructions-close")).click();
@@ -189,10 +189,9 @@ import org.testng.annotations.BeforeTest;
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.bContent__innerHeader")));//ожидание загрузки страницы
 
 	    }
-	    
 	    public static void sleep(){
 	    	try {
-	    		Thread.sleep(6000);
+	    		Thread.sleep(4000);
 	    	} catch (InterruptedException e) {
 	    		// TODO Auto-generated catch block
 	    		e.printStackTrace();

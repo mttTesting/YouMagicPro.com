@@ -19,7 +19,7 @@ public class EmployeesEditProfile2SymbolsInTextFieldTest extends TestBase{
     	
 		driver.findElement(By.xpath("//div[2]/a/div")).click();//нажимаем "Сотрудники"
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/a/span")));//ожидание загрузки страницы
-		driver.findElement(By.xpath("//td[2]/div/span")).click();
+	//	driver.findElement(By.xpath("//td[2]/div/span")).click();
 		
 		driver.findElement(By.xpath("//div[3]/a/span")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-employee-extension")));//ожидание загрузки страницы
@@ -27,7 +27,7 @@ public class EmployeesEditProfile2SymbolsInTextFieldTest extends TestBase{
 		driver.findElement(By.id("edit-employee-extension")).clear();
 		driver.findElement(By.id("edit-employee-extension")).sendKeys("53");
 		driver.findElement(By.id("edit-submit")).click();
-		sleep();
-		assertEquals(driver.findElement(By.xpath("//div/div/div[2]/div/div")).getText(), "Длина внутреннего номера должна быть от 3 до 4 цифр.");
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.errors_for_messages.error")));
+		assertEquals(driver.findElement(By.cssSelector("div.errors_for_messages.error")).getText(), "Длина внутреннего номера должна быть от 3 до 4 цифр.");
 		}
 }

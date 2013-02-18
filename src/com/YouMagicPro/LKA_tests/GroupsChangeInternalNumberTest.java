@@ -23,8 +23,8 @@ public class GroupsChangeInternalNumberTest extends TestBase {
 	
 	driver.findElement(By.xpath("//div[3]/a/div")).click();//нажимаем "группы
 	sleep();
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
-	sleep();
+	//driver.findElement(By.xpath("//td[2]/div/span")).click();
+//	sleep();
 	driver.findElement(By.xpath("//td[7]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));//ждем загрузки страницы
 	
@@ -32,7 +32,12 @@ public class GroupsChangeInternalNumberTest extends TestBase {
 	driver.findElement(By.id("edit-group-id")).sendKeys("126");
 	driver.findElement(By.id("edit-submit")).click();
 	
-	sleep();
+	try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	
 	assertEquals(driver.findElement(By.xpath("//td[4]/div/span")).getText(), "6126");
 	

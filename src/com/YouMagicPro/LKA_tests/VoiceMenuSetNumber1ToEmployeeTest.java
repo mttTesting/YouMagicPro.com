@@ -18,14 +18,14 @@ public class VoiceMenuSetNumber1ToEmployeeTest extends TestBase {
 	
 	driver.findElement(By.xpath("//div[4]/a/div")).click();
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[2]/div/span")));//ожидание загрузки страницы
+//	driver.findElement(By.xpath("//td[2]/div/span")).click();
 	
 	driver.findElement(By.xpath("//div[3]/div/a/span")).click();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/label")));
 	assertEquals(driver.findElement(By.xpath("//div/label")).getText(), "Название");
 	
-	driver.findElement(By.id("edit-ivr-name")).sendKeys("М1");
+	driver.findElement(By.id("edit-ivr-name")).sendKeys("Меню");
 	
 	driver.findElement(By.xpath("//div[2]/div/span/span/span")).click();
 	driver.findElement(By.xpath("//div[2]/div/span/ul/li[2]")).click();
@@ -33,8 +33,8 @@ public class VoiceMenuSetNumber1ToEmployeeTest extends TestBase {
 	sleep();
 	driver.findElement(By.id("edit-submit")).click();
 	sleep();
-	driver.findElement(By.xpath("//div[2]/div[4]/a[2]/span")).click();
-	driver.findElement(By.xpath("//td/a/div")).click();
+	driver.findElement(By.xpath("//a[2]/span")).click();
+	driver.findElement(By.xpath("//a/div/span")).click();
 	
 	}
 }

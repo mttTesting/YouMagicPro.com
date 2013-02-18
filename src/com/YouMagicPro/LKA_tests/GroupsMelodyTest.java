@@ -16,8 +16,8 @@ public class GroupsMelodyTest extends TestBase {
 	sleep();
 	
 	driver.findElement(By.xpath("//div[3]/a/div")).click();//нажимаем "группы
-	sleep();
-	driver.findElement(By.xpath("//td[2]/div/span")).click();
+	//sleep();
+	//driver.findElement(By.xpath("//td[2]/div/span")).click();
 	sleep();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[6]/a/span")));//ждем загрузки страницы
 	

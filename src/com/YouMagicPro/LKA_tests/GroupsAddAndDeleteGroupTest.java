@@ -23,7 +23,7 @@ public class GroupsAddAndDeleteGroupTest extends TestBase {
 
 	
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-group-name")));
-	driver.findElement(By.id("edit-group-name")).sendKeys("Г1");//заполняем поля данных
+	driver.findElement(By.id("edit-group-name")).sendKeys("Группа");//заполняем поля данных
 	driver.findElement(By.id("edit-group-id")).sendKeys("123");
 	driver.findElement(By.id("edit-capacity")).clear();
 	driver.findElement(By.id("edit-capacity")).sendKeys("10");

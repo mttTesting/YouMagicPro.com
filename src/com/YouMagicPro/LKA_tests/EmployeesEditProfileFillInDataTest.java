@@ -19,7 +19,7 @@ public class EmployeesEditProfileFillInDataTest extends TestBase{
     	
 		driver.findElement(By.xpath("//div[2]/a/div")).click();//нажимаем "Сотрудники"
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/a/span")));//ожидание загрузки страницы
-		driver.findElement(By.xpath("//td[2]/div/span")).click();
+		//driver.findElement(By.xpath("//td[2]/div/span")).click();
 		
 		driver.findElement(By.xpath("//div[2]/div[3]/a/span")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-employee-middlename")));//ожидание загрузки страницы
@@ -33,13 +33,17 @@ public class EmployeesEditProfileFillInDataTest extends TestBase{
 		driver.findElement(By.id("edit-employee-firstname")).clear();
 		driver.findElement(By.id("edit-employee-firstname")).sendKeys("Тест");
 		
+		driver.findElement(By.id("edit-user-password")).clear();
+		driver.findElement(By.id("edit-user-password")).sendKeys("1234");
 		
+		driver.findElement(By.xpath("//tr[3]/td/div/input")).clear();
+		driver.findElement(By.xpath("//tr[3]/td/div/input")).sendKeys("a@aaa.com");
 		driver.findElement(By.xpath("//div[2]/input")).clear();
 		driver.findElement(By.xpath("//div[2]/input")).sendKeys("1234");
 		
 		
 		driver.findElement(By.id("edit-submit")).click();
-		sleep();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[3]/div/div[2]/div/div/div")));
 		
 		assertEquals(driver.findElement(By.xpath("//td[3]/div/div[2]/div/div/div")).getText(), "Сотрудники");
 		
